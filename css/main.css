@@ -5,6 +5,7 @@
     max-width: 500px;
     background-color: rgb(190, 189, 189);
     border-radius: 25px;
+    color: rgb(1, 73, 110);
 }
 
 main {
@@ -42,6 +43,8 @@ li {
 hr {
     margin: 0 auto;
     max-width: 95%;
+    border-color: rgb(1, 73, 110);
+
 }
 
 #profile-pic {
@@ -63,8 +66,6 @@ footer {
 
 .copyright {
     margin: 10px 0 5px 0;
-    font-family: "Nothing You Could Do";
-
 }
 
 .last-save {
