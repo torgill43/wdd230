@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+.content {
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: rgb(190, 189, 189);
+    border-radius: 25px;
+}
+
+main {
+    margin-bottom: 15px;
+}
+
+header {
+    background-color: rgba(112, 154, 239, 0.59);
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.my-name {
+    padding: 15px 15px;
+    font-family: "Nothing You Could Do";
+    font-size: 50px;
+}
+
+.title {
+    margin-bottom: 5px;
+    padding-left: 15px;
+    font-family: "Nothing You Could Do";
+}
+
+li {
+    padding: 1px;
+    font-family: "Nothing You Could Do";
+
+}
+
+hr {
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+#profile-pic {
+    width: 75%;
+    border-radius: 25%;
+    margin: 15px;
+    box-shadow: 0 5px 5px grey ;
+}
+
+footer {
+    background-color: rgba(161, 186, 235, 0.59);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 1px 5px;
+    text-align: center;
+    font-family: "Nothing You Could Do";
+    font-weight: 900px;
+}
+
+.copyright {
+    margin: 10px 0 5px 0;
+    font-family: "Nothing You Could Do";
+
+}
+
+.last-save {
+    margin: 5px 0 10px 0;
+}
