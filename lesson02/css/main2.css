@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300&family=Yeseva+One&display=swap');
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(rgb(193, 158, 63), rgb(231, 231, 201), rgb(193, 158, 63));
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 375px;
+    margin: auto;
+
+}
+
+h1 {
+    /* background-color: rgb(171, 171, 85); */
+    padding: 15px;
+    margin-bottom: 0;
+    font-family: 'Yeseva One', serif;
+    font-size: 25pt;
+}
+
+h2 {
+    font-family: 'Permanent Marker', 'Trebuchet MS';
+}
+
+h5, p {
+    font-family: Roboto, Arial;
+}
+
+h3 {
+    padding: 0;
+    font-family: 'Yeseva One', serif;
+}
+
+#author {
+    font-family: 'Yeseva One', serif;
+    margin-top: 0;
+    font-size: 15pt;
+}
+
+
+#contrast{
+    /* background-color: rgb(231, 231, 201); */
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    /* border: 1px solid rgb(161, 161, 161);
+    border-radius: 25px; */
+}
+
+#white {
+    /* background-color: rgb(231, 231, 201); */
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    /* border: 1px solid rgb(161, 161, 161);
+    border-radius: 25px; */
+}
+
+#repetition {
+    /* background-color: rgb(231, 231, 201); */
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    /* border: 1px solid rgb(161, 161, 161);
+    border-radius: 25px; */
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
+
+p {
+    max-width: 95%;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+img {
+    max-width: 350px;
+}
+
+.copyright, .last-save {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
