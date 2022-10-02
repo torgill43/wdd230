@@ -170,10 +170,7 @@ ol {
 }
 #accent2 {
     background-color: #2b7029;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly; */
+    color:#fefee2;
     border: 1.5px solid black;
     margin: 15px;
 }
