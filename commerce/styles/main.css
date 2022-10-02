@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Raleway:wght@300&family=Yeseva+One&display=swap');
+
+#content {
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-p {
+    font-family: "Raleway";
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: rgb(165, 114, 42);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fefee2;
+    padding-right: 15px;
+    text-align: center;
+    font-family: "Abyssinica SIL";
+}
+
+nav a:hover {
+    color: #2b7029;
+}
+
+.logo {
+    width: 150px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-family: "Yeseva One";
+}
+
+h2, h3 {
+    font-family: "Abyssinica SIL";
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(165, 114, 42);
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+footer p {
+    font-family: "Raleway";
+}
+
+/* HOME PAGE (index.html) */
+
+#part1 {
+    margin-bottom: 0;
+}
+
+#part2 {
+    margin-top: 0;
+}
+
+.logo-display {
+    width: 350px;
+    border-radius: 50%;
+}
+
+
+/* TARGET AUDIENCE PAGE */
+
+#business {
+    width: 200px;
+}
+
+#tourist {
+    width: 300px;
+}
+
+.audience-p {
+    font-family: Raleway;
+    
+}
+
+.scenarios {
+    margin-bottom: 35px;
+}
+
+ol {
+    font-family: Raleway;
+    text-align: left;
+}
+
+/* TYPOGRAPHY PAGE */
+
+#title-font {
+    font-family: "Yeseva One";
+    border: 1.5px solid black;
+    background-color: #fefee2;
+    margin-bottom: 15px;
+}
+
+#title-font h2 {
+    font-family: "Yeseva One";
+    
+}
+
+#main-font {
+    font-family: "Abyssinica SIL";
+    border: 1.5px solid black;
+    background-color: #fefee2;
+    margin-bottom: 15px;
+}
+
+#p-font{
+    font-family: "Raleway";
+    border: 1.5px solid black;
+    background-color: #fefee2;
+    margin-bottom: 15px;
+}
+
+#p-font h2 {
+    font-family: "Raleway";    
+}
+
+
+/* COLOR SCHEME PAGE */
+
+#primary {
+    background-color: #7fc37e;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* justify-content: space-evenly; */
+    border: 1.5px solid black;
+    margin: 15px;
+}
+
+#secondary {
+    background-color: #fefee2;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; */
+    border: 1.5px solid black;
+    margin: 15px;
+}
+
+#accent1 {
+    background-color: rgb(165, 114, 42);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; */
+    border: 1.5px solid black;
+    margin: 15px;
+}
+#accent2 {
+    background-color: #2b7029;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; */
+    border: 1.5px solid black;
+    margin: 15px;
+}
+
