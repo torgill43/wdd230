@@ -1,0 +1,204 @@
+@media only screen and (min-width: 750px){
+    #content {
+        max-width: 750px;
+    }
+
+    #logo-link {
+        padding-left: 15px;
+        padding-top: 15px; 
+    }
+
+    #welcome-banner h1 {
+        max-width: 100%;
+        font-size: 20pt;
+    }
+    
+    nav a {
+        display: block;
+        width: 55px;
+        padding: .8rem 2vw;
+        text-decoration: none;
+        color: #fefee2;
+        border-top: none;
+        text-align: center;
+        overflow: hidden; 
+        /* display: flex; */
+        
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    nav.open a {
+        border-top: none;
+    }
+    
+    #contact-nav {
+        border-radius: 0%;
+        border-right: none;
+    }
+    
+    nav {
+        flex-direction: row;
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 5pt;
+
+    }
+
+    button {
+        display: none;
+    }
+
+    .primaryNav {
+        display: block;
+    }
+
+
+    nav a:hover, #contact-nav:hover {
+        border-radius: 5pt;
+    }
+
+    .header-menu {
+        grid-template-rows: 50px auto;
+        grid-template-columns: 1fr;
+    }
+
+    .header-menu p {
+        margin-bottom: 45px;
+    }
+
+    .menu-options {
+        grid-row: 2/3;
+        justify-content: center;
+    }
+
+    main {
+        grid-template-columns: repeat(8, 1fr);
+        column-gap: 5px;
+    }
+
+    .hero {
+        grid-column: 1/9;
+    }
+    
+    .news {
+        display: block;
+        grid-row: 2/3;
+        grid-column: 1/9;
+    }
+    
+    .spotlights {
+        grid-column: 1/9;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 150px;
+        margin-bottom: 5px;
+    }
+    
+    #spot1 {
+        border-radius: 5pt;
+        margin-left: 5px;
+        height: 85%;
+    }
+    
+    #spot2 {
+        border-radius: 5pt;
+        margin-right: 5px;
+        height: 85%;
+    }
+    
+    .join {
+        grid-column: 1/9;
+        display: block;
+        grid-row: 4/5;
+    }
+
+    .event {
+        grid-column: 1/6;
+        margin-bottom: 10px;
+    }
+
+    .weather {
+        grid-column: 6/9;
+    }
+
+
+} /* end medium */
+
+
+
+/* start large */
+@media only screen and (min-width: 1028px) {
+    #content {
+        max-width: 1100px;
+    }
+
+    main {
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .hero {
+        grid-column: 3/7;
+        grid-row: 1/3;
+        height: 94%;
+        margin-top: 5px
+    }
+
+    .event {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    
+    .weather {
+        grid-column: 1/3;
+        grid-row: 2/3
+    }
+    
+    .join {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    
+    .news {
+        grid-column: 3/7;
+        grid-row: 3/4;
+
+    }
+
+    
+
+    .spotlights {
+        grid-column: 7/9;
+        grid-row: 1/4;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 96.5%;
+        justify-items: center;
+    }
+
+    #spot1 {
+        grid-row: 1/2;
+        margin: 0;
+        padding: 0;
+        height: 95%;
+        margin-top: 5px;
+    }
+    
+    #spot2 {
+        grid-row: 2/3;
+        margin: 0;
+        padding: 0;
+        height: 95%;
+    }
+    
+    #spot3 {
+        display: block;
+        grid-row: 3/4;
+        margin: 0;
+        padding: 0;
+        height: 95%;
+        margin-bottom: 5px;
+    }
+   
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Home</title>
+    <link href="../css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/query.css" rel="stylesheet">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div id="welcome-banner">
+                <a id="logo-link">
+                    <img class="logo-btn" src="images/logo.png" alt="logo-link">
+                </a>
+                <h1>East Idaho Area - Chamber of Commerce</h1>
+            </div>
+            <div class="header-menu">
+                <p><span class="current-date"></span></p>
+                <!-- <h1>for cse121, he used create element instead of the concat thingy</h1> -->
+                <div class="menu-options">
+                    <a  href="#"><img class="icon" src="images/facebook.png" alt="facebook-link"></a>
+                    <a  href="#"><img class="icon" src="images/instagram.png" alt="facebook-link"></a>
+                    <button id="hamburger-button">&#9776;</button>
+                    <nav id="primaryNav">
+                        <a class="active" href="#">Discover</a>
+                        <a class="active" href="#">Directory</a>
+                        <a class="active" href="#">Join</a>
+                        <a class="active" id="contact-nav" href="#">Contact</a>                
+                    </nav>
+                    
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <h5>hero with site name and call to action</h5>
+            </section>
+            <section class="event">
+                <h5>Event</h5>
+            </section>
+            <section class="join">
+                <h5>Join</h5>
+            </section>
+            <section class="weather">
+                <h5>Weather</h5>
+            </section>
+            <section class="news">
+                <h5>News Release</h5>
+            </section>
+            <section class="spotlights">
+                <section id="spot1">Spotlight 1</section>
+                <section id="spot2">Spotlight 2</section>
+                <section id="spot3">Spotlight 3</section>
+            </section>
+        </main>
+        <footer>
+            <img class="footer-logo" src="images/logo.png" alt="Logo in Footer">
+            <h3 class="footer-title">East Idaho Area Chamber of Commerce</h3>
+            <p class="address">999 Main St.</p>
+            <p class="address">Idaho Falls, ID 83402</p>
+            <p class="email">info@eastern_idaho.org</p>
+            <p class="number">+1(800)555-5555</p>
+            <a href="#"><p>Location Map</p></a>
+            <p>&copy;<span id="year"></span> East Idaho Area Chamber | Tim Orgill | WDD 230 Project</p>
+            <p>Last Updated: <span id="updated"></span></p>
+
+        </footer>
+    </div>
+</body>
+</html>
