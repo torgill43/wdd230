@@ -85,8 +85,8 @@ button {
 nav a {
     display: none;   
     font-family: Raleway;
-
-font-family: 'Yeseva One'};
+    font-family: 'Yeseva One'
+}
 
 nav.open a {
     display: block;
