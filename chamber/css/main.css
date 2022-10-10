@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Raleway:wght@300&family=Yeseva+One&display=swap');
+
 body {
     margin: 0 auto;
     background-color: #fefee2;
@@ -24,6 +26,7 @@ header {
 .current-date {
     padding-left: 15px;
     font-size: 16pt;
+    font-family: 'Abyssinica SIL';
 }
 
 .header-menu {
@@ -45,6 +48,7 @@ nav {
     max-width: 225px;
     margin: 15px auto;
     font-size: 15pt;
+    font-family: 'Yeseva One';
 }
 
 .logo-btn {
@@ -80,7 +84,9 @@ button {
 
 nav a {
     display: none;   
-}
+    font-family: Raleway;
+
+font-family: 'Yeseva One'};
 
 nav.open a {
     display: block;
@@ -91,6 +97,7 @@ nav.open a {
     border-top: 1px solid rgba(0, 0, 0, .5);
     text-align: center;
     overflow: hidden;
+    font-family: Raleway;
 }
 
 nav a:hover {
@@ -119,6 +126,10 @@ main section {
     text-align: center;
     height: 150px;
     margin: 5px 0;  
+}
+
+main h5 {
+    font-family: 'Abyssinica SIL';
 }
 
 .hero {
@@ -177,6 +188,7 @@ footer {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     padding: 15px 0;
+    font-family: 'Abyssinica SIL';
 }
 
 .footer-logo {
@@ -188,4 +200,5 @@ footer {
 .footer-title {
     width: 225px;
     margin: 0 auto;
+    font-family: 'Yeseva One';
 }
