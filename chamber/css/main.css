@@ -86,19 +86,17 @@ button {
 nav a {
     display: none;   
     font-family: Raleway;
-    font-family: 'Yeseva One'
 }
 
 nav.open a {
     display: block;
-    width: 55px;
-    /* padding: .8rem 2vw; */
+    width: 65px;
+    padding: .8rem 2vw;
     text-decoration: none;
     color: #fefee2;
     border-top: 1px solid rgba(0, 0, 0, .5);
     text-align: center;
     overflow: hidden;
-    font-family: Raleway;
 }
 
 nav a:hover {
@@ -134,12 +132,12 @@ main h5 {
 }
 
 .hero {
-    /* border: 1px solid black;
-    width: 100%;
-    border-radius: 5pt;
-    text-align: center;
-    height: 150px; */
     margin: 10px 0 5px 0;
+}
+
+.btn {
+    z-index: 1;
+    border: 1px solid black;
 }
 
 .join {
