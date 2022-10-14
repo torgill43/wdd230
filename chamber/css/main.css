@@ -54,6 +54,7 @@ nav {
 .logo-btn {
     width: 100px;
     border-radius: 50%;
+    margin-top: 5px;
     margin-left: 5px;
     /* display: inline; */
 }
@@ -91,7 +92,7 @@ nav a {
 nav.open a {
     display: block;
     width: 55px;
-    padding: .8rem 2vw;
+    /* padding: .8rem 2vw; */
     text-decoration: none;
     color: #fefee2;
     border-top: 1px solid rgba(0, 0, 0, .5);
