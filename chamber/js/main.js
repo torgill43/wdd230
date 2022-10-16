@@ -1,3 +1,4 @@
+// Responsive Dates
 const date_now = new Date();
 console.log(date_now);
 
@@ -11,6 +12,11 @@ document.querySelector('#year').textContent = year;
 let currentDate = document.lastModified;
 document.querySelector('#updated').textContent = currentDate;
 
+let weekDay = date_now.getDay();
+// weekDay = 2;
+console.log(weekDay);
+
+// Hamburger Menu
 function toggleMenu() {
     document.querySelector('#primaryNav').classList.toggle("open");
 }
@@ -18,3 +24,14 @@ function toggleMenu() {
 const x = document.querySelector('#hamburger-button');
 
 x.addEventListener('click', toggleMenu);
+
+// Monday & Tuesday Message
+function toggleMessage() {
+    document.querySelector('#announcement').classList.toggle("show");
+    document.querySelector('#announcement').style.display = "block";
+    console.log('It works!')
+}
+
+if (weekDay == 1 || weekDay == 2) {
+    toggleMessage()
+}

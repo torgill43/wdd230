@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Raleway:wght@300&family=Yeseva+One&display=swap');
 
+/* Color Scheme
+Primary: #7fc37e (light green)
+          
+Secondary: #fefee2 (tan-ish)
+
+Accent #1: rgb(165, 114, 42) (brown)
+
+Accent #2: #2b7029 (dark green)
+*/
+
 body {
     margin: 0 auto;
     background-color: #fefee2;
@@ -11,10 +21,26 @@ body {
     /* background-color: aqua; */
 }
 
+#announcement {
+    text-align: center;
+    font-size: 15pt;
+    margin: 5px;
+    padding: 10px 0;
+    border-radius: 25px;
+    background-color: #fefee2;
+    display: none;
+}
+
+/* div.show {
+    /* display:block; */
+
+
 header {
     background-color: rgb(165, 114, 42);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    padding-top: 5px;
+    text-align: center;
 }
 
 #welcome-banner {
@@ -123,8 +149,9 @@ main section {
     width: 100%;
     border-radius: 5pt;
     text-align: center;
-    height: 150px;
+    height: 280px;
     margin: 5px 0;  
+    position: relative;
 }
 
 main h5 {
@@ -135,9 +162,41 @@ main h5 {
     margin: 10px 0 5px 0;
 }
 
+#hero-img1 {
+    align-self: center;
+    display: block;
+    border-radius: 5pt;
+    width: 100%;
+}
+
+#hero-img2 {
+    display: none;
+}
+
+#hero-img3 {
+    display: none;
+}
+
+#hero-msg {
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: x-large;
+}
+
 .btn {
-    z-index: 1;
+    /* z-index: 1; */
     border: 1px solid black;
+    background-color: #fefee2;
+    color: #7fc37e;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-family: 'Abyssinica SIL';
+    font-size: x-large;
+    border-radius: 5pt;
+    padding: 7.5px;
 }
 
 .join {
