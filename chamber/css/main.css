@@ -143,7 +143,7 @@ main {
     justify-items: center;
 }
 
-main section {
+.event, .weather, .news {
     background-color: rgba(237, 207, 165, 0.482);
     border: 1px solid black;
     width: 100%;
@@ -159,18 +159,30 @@ main h5 {
 }
 
 .hero {
-    margin: 10px 0 5px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5pt;
+    position: relative;
 }
 
 #hero-img1 {
+    display: none;
+    /* align-self: center;
+    display: block;
+    border-radius: 5pt;
+    width: 100%; */
+}
+
+#hero-img1 {
+    display: none;
+}
+
+#hero-img2 {
+    
     align-self: center;
     display: block;
     border-radius: 5pt;
     width: 100%;
-}
-
-#hero-img2 {
-    display: none;
 }
 
 #hero-img3 {
@@ -178,21 +190,22 @@ main h5 {
 }
 
 #hero-msg {
+    color: #fefee2;
     margin: 0;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    left: 20px;
     font-size: x-large;
 }
 
-.btn {
+.hero-btn {
     /* z-index: 1; */
     border: 1px solid black;
     background-color: #fefee2;
     color: #7fc37e;
     position: absolute;
     right: 10px;
-    bottom: 10px;
+    bottom: 20px;
     font-family: 'Abyssinica SIL';
     font-size: x-large;
     border-radius: 5pt;
@@ -201,6 +214,14 @@ main h5 {
 
 .join {
     display: none;
+    background-color: rgba(237, 207, 165, 0.482);
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 5pt;
+    text-align: center;
+    height: 280px;
+    margin: 5px 0;  
+    position: relative;
 }
 
 .spotlights {
@@ -213,6 +234,14 @@ main h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(237, 207, 165, 0.482);
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 5pt;
+    text-align: center;
+    height: 280px;
+    margin: 5px 0;  
+    position: relative;
 }
 
 .spotlights section {
@@ -221,6 +250,14 @@ main h5 {
     height: 50%;
     border-radius: 5pt;
     padding: 5px;
+    background-color: rgba(237, 207, 165, 0.482);
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 5pt;
+    text-align: center;
+    height: 280px;
+    margin: 5px 0;  
+    position: relative;
 }
 
 #spot1 {
