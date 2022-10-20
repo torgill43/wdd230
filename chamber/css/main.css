@@ -140,6 +140,7 @@ nav a:hover {
 
 main {
     display: grid;
+    grid-template-rows: repeat(5, 1fr);
     justify-items: center;
 }
 
@@ -149,7 +150,7 @@ main {
     width: 100%;
     border-radius: 5pt;
     text-align: center;
-    height: 280px;
+    /* height: auto; */
     margin: 5px 0;  
     position: relative;
 }

@@ -91,6 +91,7 @@
 
     #hero-img3 {
         display: block;
+        border-radius: 5pt;;
     }
 
     .hero-btn {
@@ -101,6 +102,20 @@
         display: block;
         grid-row: 2/3;
         grid-column: 1/9;
+        height: 350px;
+        /* display: grid; */
+        /* grid-template-columns: 1fr auto; */
+    }
+
+    .news-img {
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+    .news p {
+        display: block;
+        grid-row: 2/3;
+        grid-column: 2/3;
     }
     
     .spotlights {
