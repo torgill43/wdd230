@@ -42,14 +42,29 @@
         </header>
         <main>
             <section class="hero">
-                <img id="hero-img1" src="images/hero-500T.jpg">
-                <img id="hero-img2" src="images/hero508.jpg">
-                <img id="hero-img3" src="images/hero750.jpg">
+                <!-- <img id="hero-imgL" src="images/hero-500T-R.jpg">
+                <img id="hero-imgS" src="images/hero-508-R.jpg">
+                <img id="hero-imgM" src="images/hero750-R.jpg"> -->
+                <picture>
+                    <source 
+                        srcset="images/hero750-R.jpg" 
+                        media="(min-width:750px) and (max-width:1027px)" 
+                        >
+                        <!-- id="hero-imgM" -->
+                    <source 
+                        srcset="images/hero-500T-R.jpg" 
+                        media="(min-width:1028px)" 
+                        >
+                        <!-- id="hero-imgL" -->
+                    <img id="hero-imgS" src="images/hero-508-R.jpg" alt="hero-img">
+                </picture>
                 <p id="hero-msg">Welcome to East Idaho!</p>
                 <button type="button" class="hero-btn">Join Now</button>
             </section>
             <section class="event">
-                <h5>Event</h5>
+                <h2>Events:</h2>
+                <img src="images/halloween.png" alt="halloween-events">
+                <p>Check back often to stay up to date on events related to Halloween!</p>
             </section>
             <section class="join">
                 <h5>Join</h5>
@@ -58,20 +73,29 @@
                 <h5>Weather</h5>
                 <div class="temp">
                     <!-- <img> -->
-                    <p><span id="temp">44</span>&#8457;</p>
+                    <p><span id="temp">56</span>&#8457;</p>
                 </div>
-                <p>Wind Speed: <span id="wind-speed">1</span>mph</p>
+                <p>Wind Speed: <span id="wind-speed">15</span>mph</p>
                 <p>Wind Chill: <span id="wind-chill">N/A</span></p>
             </section>
             <section class="news">
+                <h2>News:</h2>
                 <h2>Watch out for wildlife!</h2>
                 <img class="news-img" src="images/wildlife-2.jpg" alt="Wildlife image">
                 <p>Recent Moose encounter in Twin Falls.</p>
                 <p>If you are ever faced in a situation like this, contact local authorities immediately!</p>
             </section>
             <section class="spotlights">
-                <section id="spot1">Spotlight 1</section>
-                <section id="spot2">Spotlight 2</section>
+                <section id="spot1">
+                    <h2>Rush's Kitchen Supplies</h2>
+                    <img src="images/kitchen.jpg" alt="kitchen-supplies">
+                    <p>Get all your needed kitchen supplies and more at Rush's Kitchen Supplies right here in Idaho Falls.</p>
+                </section>
+                <section id="spot2">
+                    <h2>Big Deal</h2>
+                    <img src="images/discount.png" alt="discount">
+                    <p>Swing in for just about anything you need, all at a discounted price.</p>
+                </section>
                 <section id="spot3">Spotlight 3</section>
             </section>
         </main>
