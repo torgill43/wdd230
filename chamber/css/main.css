@@ -128,10 +128,12 @@ button {
 nav a {
     display: none;   
     font-family: Raleway;
+    font-size: larger;
 }
 
 nav.open a {
     display: block;
+    font-size: medium;
     width: 65px;
     padding: .8rem 2vw;
     text-decoration: none;
@@ -220,7 +222,7 @@ main h5 {
     /* z-index: 1; */
     border: 1px solid black;
     background-color: #fefee2;
-    color: #7fc37e;
+    color: #2b7029;
     position: absolute;
     right: 10px;
     bottom: 20px;
@@ -249,7 +251,7 @@ main h5 {
 .join-btn {
     border: 1px solid black;
     background-color: #fefee2;
-    color: #7fc37e;
+    color: #2b7029;
     font-family: 'Abyssinica SIL';
     font-size: x-large;
     border-radius: 5pt;
