@@ -44,10 +44,41 @@ header {
 }
 
 #welcome-banner {
-    display: flex;
+    display: grid;
+    grid-template-columns: .5fr .9fr;
+    /* grid-template-rows: auto auto; */
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
+
+#welcome-banner h1 {
+    text-align: center;
+    /* max-width: 225px; */
+    /* margin: 15px auto; */
+    font-size: 15pt;
+    font-family: 'Yeseva One';
+}
+
+.logo-btn {
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 5px;
+    /* grid-row: 1/4; */
+}
+
+#hd-dash {
+    display: none;
+}
+
+#hd-area {
+    margin: 0 10px;
+}
+
+/* #hd-chamber {
+    grid-column: 2/3;
+    display: inline;
+} */
 
 .current-date {
     padding-left: 15px;
@@ -69,21 +100,6 @@ nav {
 
 }
 
-#welcome-banner h1 {
-    text-align: center;
-    max-width: 225px;
-    margin: 15px auto;
-    font-size: 15pt;
-    font-family: 'Yeseva One';
-}
-
-.logo-btn {
-    width: 100px;
-    border-radius: 50%;
-    margin-top: 5px;
-    margin-left: 5px;
-    /* display: inline; */
-}
 
 header p {
     text-align: center;
@@ -160,19 +176,20 @@ main h5 {
 }
 
 .hero {
-    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     width: 100%;
     border-radius: 5pt;
     position: relative;
 }
 
-#hero-imgL {
+/* #hero-imgL {
     display: none;
-    /* align-self: center;
+    align-self: center;
     display: block;
     border-radius: 5pt;
-    width: 100%; */
-}
+    width: 100%;
+} */
 
 /* #hero-imgL {
     display: none;
@@ -220,9 +237,19 @@ main h5 {
     width: 100%;
     border-radius: 5pt;
     text-align: center;
-    height: 280px;
+    /* height: 280px; */
     margin: 5px 0;  
     position: relative;
+}
+
+.join-btn {
+    border: 1px solid black;
+    background-color: #fefee2;
+    color: #7fc37e;
+    font-family: 'Abyssinica SIL';
+    font-size: x-large;
+    border-radius: 5pt;
+    padding: 7.5px;
 }
 
 .spotlights {
@@ -232,12 +259,15 @@ main h5 {
     text-align: center; */
     margin: 5px 0 10px 0;
     display: grid;
+    /* grid-template-columns: auto; */
+    /* grid-template-rows: auto; */
     /* align-items: center; */
     background-color: rgba(237, 207, 165, 0.482);
     border: 1px solid black;
-    width: 100%;
+    /* width: 100%; */
     border-radius: 5pt;
     text-align: center;
+    justify-items: center;
     margin: 5px 0;  
     position: relative;
 }
@@ -245,28 +275,26 @@ main h5 {
 .spotlights section {
     border: 1px solid black;
     width: 95%;
-    height: 50%;
+    /* height: 50%; */
     border-radius: 5pt;
-    padding: 5px;
+    /* padding: 5px; */
     background-color: rgba(237, 207, 165, 0.482);
     border: 1px solid black;
-    width: 100%;
     border-radius: 5pt;
     text-align: center;
-    height: 280px;
-    margin: 5px 0;  
+    margin: 5px 0;
     position: relative;
 }
 
 #spot1 {
-    margin-top: 5px;
+    /* margin-top: 5px; */
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
    
 }
 
 #spot2 {
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
@@ -298,4 +326,13 @@ footer {
 
 .map {
     color:#fefee2;
+}
+
+hr {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#details2 {
+    margin-bottom: 0;
 }

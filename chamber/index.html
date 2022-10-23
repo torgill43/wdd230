@@ -21,7 +21,9 @@
                 <a id="logo-link">
                     <img class="logo-btn" src="images/logo.webp" alt="logo-link">
                 </a>
-                <h1>East Idaho Area - Chamber of Commerce</h1>
+                <h1 id="hd-area">East Idaho Area Chamber of Commerce</h1>
+                <h1 id="hd-dash">-</h1>
+                <!-- <h1 id="hd-chamber">Chamber of Commerce</h1> -->
             </div>
             <div class="header-menu">
                 <p><span class="current-date"></span></p>
@@ -67,15 +69,20 @@
                 <p>Check back often to stay up to date on events related to Halloween!</p>
             </section>
             <section class="join">
-                <h5>Join</h5>
+                <h2>Join</h2>
+                <p>Don't miss opportunities to connect with local businesses.</p>
+                <p>Stay up to date with local events and other activities going on.</p>
+                <p>Click on the button below to become a member of the East Idaho Area Chamber today!</p>
+
+                <button type="button" class="join-btn">Join Now</button>
             </section>
             <section class="weather">
-                <h5>Weather</h5>
+                <h2>Weather</h2>
                 <div class="temp">
-                    <!-- <img> -->
-                    <p><span id="temp">56</span>&#8457;</p>
+                    <img src="images/weather-c.png" alt="weather-icon">
+                    <p><span id="temp">41</span>&#8457;</p>
                 </div>
-                <p>Wind Speed: <span id="wind-speed">15</span>mph</p>
+                <p>Wind Speed: <span id="wind-speed">16</span>mph</p>
                 <p>Wind Chill: <span id="wind-chill">N/A</span></p>
             </section>
             <section class="news">
@@ -86,29 +93,42 @@
                 <p>If you are ever faced in a situation like this, contact local authorities immediately!</p>
             </section>
             <section class="spotlights">
+                <!-- <h2>Local Company Spotlights:</h2> -->
                 <section id="spot1">
                     <h2>Rush's Kitchen Supplies</h2>
                     <img src="images/kitchen.jpg" alt="kitchen-supplies">
                     <p>Get all your needed kitchen supplies and more at Rush's Kitchen Supplies right here in Idaho Falls.</p>
                 </section>
                 <section id="spot2">
-                    <h2>Big Deal</h2>
+                    <h2>Big Deal Outlet</h2>
                     <img src="images/discount.png" alt="discount">
-                    <p>Swing in for just about anything you need, all at a discounted price.</p>
+                    <p>Swing in for just about anything you need, from snacks and groceries to clothing, all at a discounted price.</p>
                 </section>
-                <section id="spot3">Spotlight 3</section>
+                <section id="spot3">
+                    <h2>Plum Loco</h2>
+                    <img src="images/tex-mex.jpg" alt="tex-mex pic">
+                    <p>Satisfy your cravings with some of the best Tex-Mex around. </p>
+
+                </section>
             </section>
         </main>
         <footer>
+            <div class="footer-grid">
             <img class="footer-logo" src="images/logo.webp" alt="Logo in Footer">
-            <h3 class="footer-title">East Idaho Area Chamber of Commerce</h3>
-            <p class="address">999 Main St.</p>
-            <p class="address">Idaho Falls, ID 83402</p>
-            <p class="email">info@eastern_idaho.org</p>
-            <p class="number">+1(800)555-5555</p>
-            <a  class="map" href="https://goo.gl/maps/o7PZx8LgnXjKj78G7" target="_blank"><p>Location Map</p></a>
-            <p>&copy;<span id="year"></span> East Idaho Area Chamber | Tim Orgill | WDD 230 Project</p>
-            <p>Last Updated: <span id="updated"></span></p>
+            <div>
+                 <h3 class="footer-title">East Idaho Area Chamber of Commerce</h3>
+                <p class="address">999 Main St.</p>
+                <p class="address">Idaho Falls, ID 83402</p>
+            </div>
+            <div>
+                <p class="email">info@eastern_idaho.org</p>
+                <p class="number">+1(800)555-5555</p>
+                <a  class="map" href="https://goo.gl/maps/o7PZx8LgnXjKj78G7" target="_blank"><p>Location Map</p></a>
+            </div>
+            </div>
+            <hr>
+            <p id="details1">&copy;<span id="year"></span> East Idaho Area Chamber | Tim Orgill | WDD 230 Project</p>
+            <p id="details2">Last Updated: <span id="updated"></span></p>
 
         </footer>
     </div>
