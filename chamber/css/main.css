@@ -230,6 +230,10 @@ main h5 {
     padding: 7.5px;
 }
 
+#temp {
+    font-size: xx-large;
+}
+
 .join {
     display: none;
     background-color: rgba(237, 207, 165, 0.482);
