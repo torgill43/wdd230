@@ -342,3 +342,11 @@ hr {
 #details2 {
     margin-bottom: 0;
 }
+
+/* DISCOVERY PAGE */
+
+#discovery-content {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:  1fr;
+}

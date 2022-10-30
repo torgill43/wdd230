@@ -20,7 +20,7 @@ const image = document.querySelectorAll('img');
 // square brackets used to target attributes
 const pimages = document.querySelectorAll('[data-src]');
 const options = {
-    threshold: 0
+    threshold: .5
     // rootMargin: "0px 0px 100px 0px"
 }
 
@@ -74,6 +74,8 @@ pimages.forEach(image  => {
 let prevDate;
 
 let currDate = Date.now();
+
+// localStorage.setItem('lastVisit', Date('2022-06-13'))
 
 
 // difference bw two dates (or last time they visited)
