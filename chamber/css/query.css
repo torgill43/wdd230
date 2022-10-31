@@ -370,7 +370,8 @@
 
     #discover-content {
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: 800px;     
+        gap: 5px;
+        max-width: 1000px;     
         margin: 0 auto; 
     }
 
