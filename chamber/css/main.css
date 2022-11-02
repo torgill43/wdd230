@@ -345,14 +345,26 @@ hr {
 
 /* DISCOVERY PAGE */
 
-#discovery-content {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns:  1fr;
-    
+#discover-content {
+    margin: 10px auto;
+    /* display: flex;     */
 }
 
 #picture-content {
     margin: 0 auto;
+    display: flex;
+    /* flex: row; */
+    flex-wrap: wrap;
+    justify-content: space-around   ;
+    max-width: 950px;
     margin-top: 5px;
+    text-align: center;
+}
+
+#picture-content picture {
+    margin: 5px 0;
+}
+
+#picture-content picture p {
+    margin-top: 5px
 }

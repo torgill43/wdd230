@@ -368,11 +368,11 @@
 
     /* DISCOVERY */
 
-    #discover-content {
+    /* #discover-content {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 5px;
         max-width: 1000px;     
         margin: 0 auto; 
-    }
+    } */
 
 }
