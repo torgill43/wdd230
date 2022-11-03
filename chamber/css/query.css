@@ -207,6 +207,12 @@
         grid-column: 1/4;
     }
 
+    /* ------------- Discovery Page -------------- */
+
+    #discover-last-visit {
+        text-align: left;
+        margin-left: 10px;
+    }
 
 } /* end medium */
 
@@ -374,5 +380,9 @@
         max-width: 1000px;     
         margin: 0 auto; 
     } */
+
+    #picture-content picture img:hover {
+        transform: scale(1.01);
+    }
 
 }
