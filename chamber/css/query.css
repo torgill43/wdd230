@@ -208,11 +208,21 @@
     }
 
     /* ------------- Discovery Page -------------- */
-
+    
     #discover-last-visit {
         text-align: left;
         margin-left: 10px;
+
+
     }
+    /* ------------- Join Page -------------- */
+
+    #join-content {
+        flex-direction: row;
+        max-width: 650px;
+        justify-content: center;
+    }
+
 
 } /* end medium */
 

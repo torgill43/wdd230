@@ -343,7 +343,7 @@ hr {
     margin-bottom: 0;
 }
 
-/* DISCOVERY PAGE */
+/* -------------- DISCOVERY PAGE ----------------*/
 
 #discover-content {
     margin: 10px auto;
@@ -367,4 +367,49 @@ hr {
 
 #picture-content picture p {
     margin-top: 5px
+}
+
+/* -------------- DISCOVERY PAGE ----------------*/
+
+form input:required {
+    border-left: red solid 6px;
+}
+
+form input:required:valid{
+    border-left: green solid 6px;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+label, input, textarea {
+    display: block;
+    margin-left: 30px;
+}
+
+textarea {
+    height: 150px;
+    width: 300px;
+}
+
+#radio label, #radio input {
+    display: inline;
+    margin-left: 10px;
+}
+
+.radio {
+    margin-left: 30px;
+}
+
+#join-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    margin: 30px auto;
 }

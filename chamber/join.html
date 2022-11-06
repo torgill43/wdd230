@@ -7,6 +7,7 @@
     <title>Form</title>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/query.css" rel="stylesheet">
+    <link href="css/join.css" rel="stylesheet">
     <script defer src="js/main.js"></script>
     <link rel="icon" href="favicon.ico">
 </head>
@@ -40,16 +41,89 @@
             </div>
         </div>
     </header>
+<main id="join-content">
     <form method="get" action="thankyou.html">
         <label for="fname">First Name*:</label>
         <input id="fname" type="text" name="firstname" required>
+
         <label for="lname">Last Name*:</label>
         <input id="lname" type="text" name="lastname" required>
-        <label for="title">Business Position Title*:</label>
-        <input required id="title" name="title" type="text">
+        
+        <label for="title">Business Position Title* (Only letters, spaces, and dashes, at least 7 characters    ):</label>
+        <!--                               [] indicate what we want to allow in the field    -->
+        <input required id="title" name="title" type="text" pattern="[- A-Za-z]+" minlength="7">
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" placeholder="name@email.com">
+        
+        <label for="phone">Cell Number:</label>
+        <input id="phone" type="tel" name="phone" required placeholder="(xxx) xxx-xxxx">
+
+        <label id="member">Enter Your Membership</label>
+        <div id="radio">
+            <div class="radio">
+                <input type="radio" id="np" name="mLevel" value="non-profit">
+                <label for="np">Non-Profit</label>
+            </div>
+            <div class="radio">
+                <input type="radio" id="bronze" name="mLevel" value="bronze">
+                <label for="bronze">Bronze</label>
+            </div>
+            <div class="radio">
+                <input type="radio" id="silver" name="mLevel" value="Silver">
+                <label for="silver">Silver</label>
+            </div>
+            <div class="radio">
+                <input type="radio" id="gold" name="mLevel" value="Gold">
+                <label for="gold">Gold</label>
+            </div>
+        </div>
+
+        <label for="message">Business Description</label>
+        <textarea id="message" placeholder="your biz description here"></textarea>
+
+        <input id="date" type="hidden" name="todaydate">
+
+        <input type="submit" value="Join Now">
     </form>
 
-    
+    <section>
+        <div id="np-benefits">
+            <h2>Non-Profit Membership</h2>
+            <ul>
+                <li>For non profit organizations and there is no fee</li>
+            </ul>
+        </div>
+        <div id="bronze-benefits">
+            <h2>Bronze Membership</h2>
+            <ul>
+                <li>15% discount on events</li>
+                <li>10% discount on advertising</li>
+                <li>Fee of $50/month</li>
+            </ul>
+        </div>
+        <div id="silver-benefits">
+            <h2>Silver Membership</h2>
+            <ul>
+                <li>25% discount on events</li>                                            
+                <li>15% discount on advertising  </li>
+                <li>Free participation in the trade fair</li>
+                <li>Fee of $100/month</li>
+            </ul>
+        </div>
+        <div id="gold-benefits">
+            <h2>Gold Membership</h2>
+            <ul>
+                <li>50% discount on events</li>
+                <li>50% discount on advertising</li>                
+                <li>Free participation in the trade fair</li>
+                <li>5 free featured ads per year</li>                
+                <li>1 free training per quarter</li>                
+                <li>Fee of $250/month</li>
+            </ul>
+        </div>
+    </section>
+</main>
     <footer>
         <div class="footer-grid">
         <img class="footer-logo" src="images/logo.webp" alt="Logo in Footer">
