@@ -5,7 +5,7 @@ console.log(image);
 
 const pimages = document.querySelectorAll('[data-src]');
 const options = {
-    threshold: .25
+    threshold: .5
 }
 
 function preloadImage(img) {

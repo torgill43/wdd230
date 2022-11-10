@@ -1,0 +1,16 @@
+body {
+    background-color: antiquewhite;
+}
+
+#weather {
+    /* max-width: 150px; */
+    background-color: lightgray;
+    margin: 200px auto;
+    border: 1px solid black;
+    text-align: center;
+}
+
+h2 {
+    display: inline;
+    color: red
+}
