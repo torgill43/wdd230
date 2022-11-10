@@ -37,52 +37,89 @@ if (weekDay == 1 || weekDay == 2) {
 }
 
 // Wind Chill
-let temp = document.querySelector('#temp').textContent;
-let windspeed = document.querySelector('#wind-speed').textContent;
+// let temp = document.querySelector('#temp').textContent;
+// let windspeed = document.querySelector('#wind-speed').textContent;
 
-if (temp < 50 && windspeed > 4.8) {
-let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
+// if (temp < 50 && windspeed > 4.8) {
+// let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
 
-const windchill = document.querySelector('#wind-chill');
+// const windchill = document.querySelector('#wind-chill');
 
-windchill.innerHTML = chill + '&#8457;';
+// windchill.innerHTML = chill + '&#8457;';
+// }
 
+
+// -------------------- Discovery Page ---------------------
+
+// Lazy Load
+
+const image = document.querySelectorAll(".discover-img");
+console.log(image);
+
+const pimages = document.querySelectorAll('[data-src]');
+const options = {
+    threshold: .5
 }
 
+function preloadImage(img) {
+    const source = img.getAttribute('data-src');
+    if (!source){
+        return;
+    }
 
-// Discovery Page ---------------------
+    img.src = source;
+}
 
-// const image = document.querySelectorAll(".discover-img");
-// console.log(image);
+const io = new IntersectionObserver (
+    (entries, io) => {
+        entries.forEach(entry =>
+            {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    preloadImage(entry.target);
+                    io.unobserve(entry.target);
+                }
+            })
+},
+options);
 
-// const pimages = document.querySelectorAll('[data-src]');
-// const options = {
-//     threshold: .25
-// }
+pimages.forEach(image => {
+    io.observe(image);
+})
 
-// function preloadImage(img) {
-//     const source = img.getAttribute('data-src');
-//     if (!source){
-//         return;
-//     }
+// Last Visited
 
-//     img.src = source;
-// }
+let lastVisitDate;
 
-// const io = new IntersectionObserver (
-//     (entries, io) => {
-//         entries.forEach(entry =>
-//             {
-//                 if (!entry.isIntersecting) {
-//                     return;
-//                 } else {
-//                     preloadImage(entry.target);
-//                     io.unobserve(entry.target);
-//                 }
-//             })
-// },
-// options);
+let thisVisitDate = Date.now();
 
-// pimages.forEach(image => {
-//     io.observe(image);
-// })
+if (!localStorage.getItem('lastVisit')) {
+    localStorage.setItem('lastVisit', Date.now());
+    document.querySelector('#discover-last-visit').textContent = "This is your first visit!";
+} else {
+    setDate();
+}
+
+function setDate() {
+    let lastVisitDate = localStorage.getItem('lastVisit');
+    let thisVisitDate = Date.now();
+
+    let diff = thisVisitDate - lastVisitDate;
+    console.log(diff);
+    let daysDiff = Math.floor(diff/1000/60/60/24);
+
+    document.querySelector('#last-visit').textContent = daysDiff;
+    localStorage.setItem('lastVisit', Date.now());
+}
+                                    
+// -------------------- Join Page ---------------------
+
+// const hiddenDate = 
+//     date.getMonth() + ' / ' +
+//     date.getDate() + ' / ' +
+//     date.getFullYear() + ' / ' +
+//     date.getHours() + ' / ' +
+//     date.getMinutes() + ' / ' +
+//     date.getSeconds()
+// ;
