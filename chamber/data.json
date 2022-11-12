@@ -1,0 +1,88 @@
+{
+    "businesses": [
+      {
+        "logo": "dir-edge-logo.png",
+        "name": "Edge Financial",
+        "address": "3456 E. 17th Street Suite 180 Ammon, ID 83406",
+        "phone": "208-419-8396",
+        "websiteURL": "https://www.edgefinancialadvisors.com/"
+      },
+      {
+        "logo": "dir-anytime-fitness-logo.png",
+        "name": "Anytime Fitness",
+        "address": "859 S Yellowstone Hwy Ste 700 Rexburg, ID 83440",
+        "phone": "208-656-9675",
+        "websiteURL": "https://www.anytimefitness.com/"
+      },
+      {
+        "logo": "dir-pie-hole-logo.png",
+        "name": "Pie Hole",
+        "address": "321 Park Ave, Idaho Falls, ID 83402",
+        "phone": "208-754-2232",
+        "websiteURL": "https://www.pieholeofidahofalls.com/?utm_source=gbp"
+      },
+      {
+        "logo": "dir-westmark-logo-png",
+        "name": "Westmark",
+        "address": "1385 Fremont Ave. Idaho Falls, ID 83402",
+        "phone": "208-523-2109",
+        "websiteURL": "https://www.westmark.org/science-center-branch-location.shtml"
+      },
+      {
+        "logo": "dir-ifch-logo-png",
+        "name": "Idaho Falls Community Hospital",
+        "address": "2327 Coronado St, Idaho Falls, ID 83404",
+        "phone": "208-528-1000",
+        "websiteURL": "https://www.idahofallscommunityhospital.com/"
+      },
+      {
+        "logo": "dir-mws-logo.png",
+        "name": "Manwaring Web Solutions",
+        "address": "545 W 19th St. Idaho Falls, ID 83402",
+        "phone": "208-419-0051",
+        "websiteURL": "https://mws.dev"
+      },
+      {
+        "logo": "dir-rex-rapids-logo.png",
+        "name": "Rexburg Rapids",
+        "address": "50 W 2nd N, Rexburg, ID 83440",
+        "phone": "208-372-2490",
+        "websiteURL": "https://www.rexburgrapids.com/"
+      },
+      {
+        "logo": "dir-rexburg-golf-logo.png",
+        "name": "Rexburg Municipal Golf Course",
+        "address": "26 Airport Rd, Rexburg, ID 83440",
+        "phone": "208-359-3037",
+        "websiteURL": "https://www.tetonlakesgc.com/"
+      },
+      {
+        "logo": "dir-plum-loco-logo.png",
+        "name": "Plum Loco",
+        "address": "235 Cliff St, Idaho Falls, ID 83402",
+        "phone": "208-524-3663",
+        "websiteURL": "http://www.bigjuds.com/"
+      },
+      {
+        "logo": "dir-lucys-logo.png",
+        "name": "Lucy's",
+        "address": "560 W Broadway St, Idaho Falls, ID 83402",
+        "phone": "208-524-2800",
+        "websiteURL": "https://www.lucysnypizza.com/"
+      },
+      {
+        "logo": "dir-ifzoo-logo.png",
+        "name": "Idaho Falls Zoo",
+        "address": "2940 Carnival Way, Idaho Falls, ID 83402",
+        "phone": "208-612-8552",
+        "websiteURL": "https://www.idahofallsidaho.gov/1736/Zoo"
+      },
+      {
+        "logo": "dir-royal-theaters-logo.png",
+        "name": "Royal Theaters",
+        "address": "461 Park Ave, Idaho Falls, ID 83402",
+        "phone": "208-525-3340",
+        "websiteURL": "http://www.royaltheaters.com/"
+      }
+    ]
+  }
