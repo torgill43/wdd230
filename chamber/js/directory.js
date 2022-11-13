@@ -54,7 +54,7 @@ function displayBusinesses(item) {
     let site = document.createElement('a');
 
 
-    logo.setAttribute('src', item.logo);
+    logo.setAttribute('src', `https://raw.githubusercontent.com/torgill43/wdd230/main/chamber/data.json/${item.logo}`);
     logo.setAttribute('alt', `${item.name} Logo`);
     address.textContent = `${item.address} `
     phone.textContent = `${item.phone}`;
