@@ -436,6 +436,9 @@ textarea {
     padding: 30px;
     text-align: center;
     width: 250px;
-    margin: 20px;
-    
+    margin: 20px;    
+}
+
+.cards section img {
+    width: 90%;
 }
