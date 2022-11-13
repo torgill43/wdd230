@@ -1,147 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Join the Chamber</title>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/query.css" rel="stylesheet">
     <link href="css/join.css" rel="stylesheet">
-    <script defer src="js/main.js"></script>
+    <script defer src="js/join.js"></script>
     <link rel="icon" href="favicon.ico">
 </head>
+
 <body>
-    <header>
-        <div>
-            <h2 id="announcement">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
-        </div>
-        <div id="welcome-banner">
-            <a id="logo-link" href="index.html">
-                <img class="logo-btn" src="images/logo.webp" alt="logo-link">
-            </a>
-            <h1 id="hd-area">East Idaho Area Chamber of Commerce</h1>
-            <h1 id="hd-dash">-</h1>
-            <!-- <h1 id="hd-chamber">Chamber of Commerce</h1> -->
-        </div>
-        <div class="header-menu">
-            <p><span class="current-date"></span></p>
-            <!-- <h1>for cse121, he used create element instead of the concat thingy</h1> -->
-            <div class="menu-options">
-                <a  href="#"><img class="icon" src="images/facebook.png" alt="facebook-link"></a>
-                <a  href="#"><img class="icon" src="images/instagram.png" alt="facebook-link"></a>
-                <button id="hamburger-button">&#9776;</button>
-                <nav id="primaryNav">
-                    <a class="active" href="discover.html">Discover</a>
-                    <a class="active" href="#">Directory</a>
-                    <a class="active" href="join.html">Join</a>
-                    <a class="active" id="contact-nav" href="#">Contact</a>                
-                </nav>
-                
+    <div id="content">
+        <header>
+            <div>
+                <h2 id="announcement">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
             </div>
-        </div>
-    </header>
-<main id="join-content">
-    <form method="get" action="thankyou.html">
-        <label for="fname">First Name*:</label>
-        <input id="fname" type="text" name="firstname" required>
-
-        <label for="lname">Last Name*:</label>
-        <input id="lname" type="text" name="lastname" required>
-        
-        <label for="title">Business Position Title* (Only letters, spaces, and dashes, at least 7 characters    ):</label>
-        <!--                               [] indicate what we want to allow in the field    -->
-        <input required id="title" name="title" type="text" pattern="[- A-Za-z]+" minlength="7">
-
-        <label for="email">Email:</label>
-        <input id="email" type="email" name="email" placeholder="name@email.com">
-        
-        <label for="phone">Cell Number:</label>
-        <input id="phone" type="tel" name="phone" required placeholder="(xxx) xxx-xxxx">
-
-        <label id="member">Enter Your Membership</label>
-        <div id="radio">
-            <div class="radio">
-                <input type="radio" id="np" name="mLevel" value="non-profit">
-                <label for="np">Non-Profit</label>
+            <div id="welcome-banner">
+                <a id="logo-link" href="index.html">
+                    <img class="logo-btn" src="images/logo.webp" alt="logo-link">
+                </a>
+                <h1 id="hd-area">East Idaho Area Chamber of Commerce</h1>
+                <h1 id="hd-dash">-</h1>
+                <!-- <h1 id="hd-chamber">Chamber of Commerce</h1> -->
             </div>
-            <div class="radio">
-                <input type="radio" id="bronze" name="mLevel" value="bronze">
-                <label for="bronze">Bronze</label>
+            <div class="header-menu">
+                <p><span class="current-date"></span></p>
+                <!-- <h1>for cse121, he used create element instead of the concat thingy</h1> -->
+                <div class="menu-options">
+                    <a href="#"><img class="icon" src="images/facebook.png" alt="facebook-link"></a>
+                    <a href="#"><img class="icon" src="images/instagram.png" alt="facebook-link"></a>
+                    <button id="hamburger-button">&#9776;</button>
+                    <nav id="primaryNav">
+                        <a class="active" href="discover.html">Discover</a>
+                        <a class="active" href="directory.html">Directory</a>
+                        <a class="active" href="join.html">Join</a>
+                        <a class="active" id="contact-nav" href="#">Contact</a>
+                    </nav>
+
+                </div>
             </div>
-            <div class="radio">
-                <input type="radio" id="silver" name="mLevel" value="Silver">
-                <label for="silver">Silver</label>
+        </header>
+        <main id="join-content">
+            <form method="get" action="thankyou.html">
+                <label for="fname">First Name*:</label>
+                <input id="fname" type="text" name="firstname" required>
+
+                <label for="lname">Last Name*:</label>
+                <input id="lname" type="text" name="lastname" required>
+
+                <label for="title">Business Position Title* (Only letters, spaces, and dashes, at least 7 characters
+                    ):</label>
+                <!--                               [] indicate what we want to allow in the field    -->
+                <input required id="title" name="title" type="text" pattern="[- A-Za-z]+" minlength="7">
+
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="name@email.com">
+
+                <label for="phone">Cell Number:</label>
+                <input id="phone" type="tel" name="phone" required placeholder="(xxx) xxx-xxxx">
+
+                <label id="member">Enter Your Membership</label>
+                <div id="radio">
+                    <div class="radio">
+                        <input type="radio" id="np" name="mLevel" value="non-profit">
+                        <label for="np">Non-Profit</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="bronze" name="mLevel" value="bronze">
+                        <label for="bronze">Bronze</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="silver" name="mLevel" value="Silver">
+                        <label for="silver">Silver</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="gold" name="mLevel" value="Gold">
+                        <label for="gold">Gold</label>
+                    </div>
+                </div>
+
+                <label for="message">Business Description</label>
+                <textarea id="message" placeholder="your biz description here"></textarea>
+
+                <input id="date" type="hidden" name="todaydate">
+
+                <input type="submit" value="Join Now">
+            </form>
+
+            <section>
+                <div id="np-benefits">
+                    <h2>Non-Profit Membership</h2>
+                    <ul>
+                        <li>For non profit organizations and there is no fee</li>
+                    </ul>
+                </div>
+                <div id="bronze-benefits">
+                    <h2>Bronze Membership</h2>
+                    <ul>
+                        <li>15% discount on events</li>
+                        <li>10% discount on advertising</li>
+                        <li>Fee of $50/month</li>
+                    </ul>
+                </div>
+                <div id="silver-benefits">
+                    <h2>Silver Membership</h2>
+                    <ul>
+                        <li>25% discount on events</li>
+                        <li>15% discount on advertising </li>
+                        <li>Free participation in the trade fair</li>
+                        <li>Fee of $100/month</li>
+                    </ul>
+                </div>
+                <div id="gold-benefits">
+                    <h2>Gold Membership</h2>
+                    <ul>
+                        <li>50% discount on events</li>
+                        <li>50% discount on advertising</li>
+                        <li>Free participation in the trade fair</li>
+                        <li>5 free featured ads per year</li>
+                        <li>1 free training per quarter</li>
+                        <li>Fee of $250/month</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-grid">
+                <img class="footer-logo" src="images/logo.webp" alt="Logo in Footer">
+                <div>
+                    <h3 class="footer-title">East Idaho Area Chamber of Commerce</h3>
+                    <p class="address">999 Main St.</p>
+                    <p class="address">Idaho Falls, ID 83402</p>
+                </div>
+                <div>
+                    <p class="email">info@eastern_idaho.org</p>
+                    <p class="number">+1(800)555-5555</p>
+                    <a class="map" href="https://goo.gl/maps/o7PZx8LgnXjKj78G7" target="_blank">
+                        <p>Location Map</p>
+                    </a>
+                </div>
             </div>
-            <div class="radio">
-                <input type="radio" id="gold" name="mLevel" value="Gold">
-                <label for="gold">Gold</label>
-            </div>
-        </div>
+            <hr>
+            <p id="details1">&copy;<span id="year"></span> East Idaho Area Chamber | Tim Orgill | WDD 230 Project</p>
+            <p id="details2">Last Updated: <span id="updated"></span></p>
 
-        <label for="message">Business Description</label>
-        <textarea id="message" placeholder="your biz description here"></textarea>
-
-        <input id="date" type="hidden" name="todaydate">
-
-        <input type="submit" value="Join Now">
-    </form>
-
-    <section>
-        <div id="np-benefits">
-            <h2>Non-Profit Membership</h2>
-            <ul>
-                <li>For non profit organizations and there is no fee</li>
-            </ul>
-        </div>
-        <div id="bronze-benefits">
-            <h2>Bronze Membership</h2>
-            <ul>
-                <li>15% discount on events</li>
-                <li>10% discount on advertising</li>
-                <li>Fee of $50/month</li>
-            </ul>
-        </div>
-        <div id="silver-benefits">
-            <h2>Silver Membership</h2>
-            <ul>
-                <li>25% discount on events</li>                                            
-                <li>15% discount on advertising  </li>
-                <li>Free participation in the trade fair</li>
-                <li>Fee of $100/month</li>
-            </ul>
-        </div>
-        <div id="gold-benefits">
-            <h2>Gold Membership</h2>
-            <ul>
-                <li>50% discount on events</li>
-                <li>50% discount on advertising</li>                
-                <li>Free participation in the trade fair</li>
-                <li>5 free featured ads per year</li>                
-                <li>1 free training per quarter</li>                
-                <li>Fee of $250/month</li>
-            </ul>
-        </div>
-    </section>
-</main>
-    <footer>
-        <div class="footer-grid">
-        <img class="footer-logo" src="images/logo.webp" alt="Logo in Footer">
-        <div>
-             <h3 class="footer-title">East Idaho Area Chamber of Commerce</h3>
-            <p class="address">999 Main St.</p>
-            <p class="address">Idaho Falls, ID 83402</p>
-        </div>
-        <div>
-            <p class="email">info@eastern_idaho.org</p>
-            <p class="number">+1(800)555-5555</p>
-            <a  class="map" href="https://goo.gl/maps/o7PZx8LgnXjKj78G7" target="_blank"><p>Location Map</p></a>
-        </div>
-        </div>
-        <hr>
-        <p id="details1">&copy;<span id="year"></span> East Idaho Area Chamber | Tim Orgill | WDD 230 Project</p>
-        <p id="details2">Last Updated: <span id="updated"></span></p>
-
-    </footer>
+        </footer>
+    </div>
 </body>
+
 </html>

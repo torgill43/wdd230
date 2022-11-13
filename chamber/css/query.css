@@ -216,13 +216,19 @@
 
     }
     /* ------------- Join Page -------------- */
-
+    
     #join-content {
         flex-direction: row;
         max-width: 650px;
         justify-content: center;
     }
+    
+    /* ------------- DIRECTORY Page -------------- */
 
+    #directory-main {
+        display: flex;
+        justify-content: space-around;
+    }
 
 } /* end medium */
 
@@ -382,7 +388,7 @@
     }
 
 
-    /* DISCOVERY */
+    /* ------------- DISCOVERY Page -------------- */
 
     /* #discover-content {
         grid-template-columns: 1fr 1fr 1fr;
@@ -393,6 +399,15 @@
 
     #picture-content picture img:hover {
         transform: scale(1.01);
+    }
+
+
+    /* ------------- DIRECTORY Page -------------- */
+
+
+    #directory-main {
+        display: flex;
+        justify-content: space-around;
     }
 
 }

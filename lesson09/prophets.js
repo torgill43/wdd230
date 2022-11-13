@@ -39,12 +39,13 @@ function displayProphets(item) {
 
     document.querySelector('.cards').appendChild(card);
 
-    // card.forEach((item) => {
-    //     item.remove();
-    // });
-
+    
 }
 
 // Hides cards (target the div using the class/id)
     // card.style.display = 'none';
 
+    
+// card.forEach((item) => {
+    //     item.remove();
+    // });

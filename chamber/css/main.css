@@ -369,7 +369,7 @@ hr {
     margin-top: 5px
 }
 
-/* -------------- DISCOVERY PAGE ----------------*/
+/* -------------- JOIN PAGE ----------------*/
 
 form input:required {
     border-left: red solid 6px;
@@ -412,4 +412,30 @@ textarea {
     align-items: center;
     max-width: 350px;
     margin: 30px auto;
+}
+
+
+/* -------------- DIRECTORY PAGE ----------------*/
+
+#directory-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.cards section {
+    border: 1px solid #2b7029;
+    background-color: #ebebcd;
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+    margin: 20px;
+    
 }
