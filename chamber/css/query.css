@@ -226,8 +226,20 @@
     /* ------------- DIRECTORY Page -------------- */
 
     #directory-main {
-        display: flex;
-        justify-content: space-around;
+        display:block
+    }
+
+    td {
+        width: 150px;
+        text-align: left;
+    }
+
+    td:nth-child(3) {
+        width: 100px;
+    }
+
+    tr {
+        flex-direction: row;
     }
 
 } /* end medium */
@@ -406,8 +418,13 @@
 
 
     #directory-main {
-        display: flex;
-        justify-content: space-around;
+        display: block;
+        /* justify-content: space-around; */
+    }
+
+    td {
+        width: 250px;
+        padding: 10px;
     }
 
 }

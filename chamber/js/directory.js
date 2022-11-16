@@ -31,7 +31,7 @@ x.addEventListener('click', toggleMenu);
 const requestURL = "https://raw.githubusercontent.com/torgill43/wdd230/main/chamber/data.json";
 
 // await can only be used with an async function
-async function getBusinesses(requestURL) {
+async function getData(requestURL) {
     const response = await fetch(requestURL);
     console.log(response);
     if (response.ok) {
@@ -39,36 +39,119 @@ async function getBusinesses(requestURL) {
         console.log(jsObject);
         const businesses = jsObject['businesses'];
         console.log(businesses[0].name);
-        businesses.forEach(displayBusinesses);
+        businesses.forEach(displayCards);
+        return businesses;
     }
-    
 };
 
-getBusinesses(requestURL);
+async function displayCards() {
+    document.querySelector('.cards').style.display = 'none';
+    document.querySelector('table').style.display = 'none';
 
-function displayBusinesses(item) {
-    let card = document.createElement('section');
-    let logo = document.createElement('img');
-    let address = document.createElement('p');
-    let phone = document.createElement('p');
-    let site = document.createElement('a');
+    let business = await getData(requestURL);
+    console.log(business);
+    business.forEach(displayBusinessesCards);
 
+    function displayBusinessesCards(item) {
+        let cards = document.querySelector('.cards');
 
-    logo.setAttribute('src', `https://raw.githubusercontent.com/torgill43/wdd230/main/chamber/images/${item.logo}`);
-    logo.setAttribute('alt', `${item.name} Logo`);
-    address.textContent = `${item.address} `
-    phone.textContent = `${item.phone}`;
-    site.textContent = `${item.websiteURL}`;
+        let card = document.createElement('section');
+        let logo = document.createElement('img');
+        let address = document.createElement('p');
+        let phone = document.createElement('p');
+        let site = document.createElement('a');
 
-    card.appendChild(logo);
-    card.appendChild(address);
-    card.appendChild(phone);
-    card.appendChild(site);
+        logo.setAttribute('src', `https://raw.githubusercontent.com/torgill43/wdd230/main/chamber/images/${item.logo}`);
+        logo.setAttribute('alt', `${item.name} Logo`);
+        address.textContent = `${item.address} `
+        phone.textContent = `${item.phone}`;
+        site.setAttribute('href', item.websiteURL);
+        site.textContent = item.websiteURL;
 
-    document.querySelector('.cards').appendChild(card);    
+        card.appendChild(logo);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(site);
+
+        document.querySelector('.cards').appendChild(card); 
+    }
 }
 
-// Hides cards (target the div using the class/id)
-    // card.style.display = 'none';
+async function displayTable() {
+    document.querySelector('.cards').style.display = 'none';
+    document.querySelector('table').style.display = 'none';
 
-    
+    let business = await getData(requestURL);
+    console.log(business);
+    business.forEach(displayBusinessesTable);
+
+    let row = document.createElement('tr');
+    let name = document.createElement('td');
+    let address = document.createElement('td');
+    let phone = document.createElement('td');
+    let site = document.createElement('td');
+
+    name.textContent = `${item.name}`;
+    address.textContent = `${item.address}`;
+    phone.textContent = `${item.phone}`;
+    site.setAttribute('href', item.websiteURL);
+    site.textContent = item.websiteURL;
+
+    row.appendChild(name);
+    row.appendChild(address);
+    row.appendChild(phone);
+    row.appendChild(site);
+
+    document.querySelector('table').appendChild(row);  
+}
+
+// function displayBusinessesCards(item) {
+//     document.querySelector('table').style.display = 'none';
+//     document.querySelector('.cards').style.display = 'none';
+//     let card = document.createElement('section');
+//     let logo = document.createElement('img');
+//     let address = document.createElement('p');
+//     let phone = document.createElement('p');
+//     let site = document.createElement('a');
+
+//     logo.setAttribute('src', `https://raw.githubusercontent.com/torgill43/wdd230/main/chamber/images/${item.logo}`);
+//     logo.setAttribute('alt', `${item.name} Logo`);
+//     address.textContent = `${item.address} `
+//     phone.textContent = `${item.phone}`;
+//     site.setAttribute('href', item.websiteURL);
+//     site.textContent = item.websiteURL;
+
+//     card.appendChild(logo);
+//     card.appendChild(address);
+//     card.appendChild(phone);
+//     card.appendChild(site);
+
+//     document.querySelector('.cards').appendChild(card);    
+// }
+
+// function displayBusinessesTable(item) {
+//     document.querySelector('.cards').style.display = 'none';
+//     document.querySelector('table').style.display = 'none';
+//     let row = document.createElement('tr');
+//     let name = document.createElement('td');
+//     let address = document.createElement('td');
+//     let phone = document.createElement('td');
+//     let site = document.createElement('td');
+
+//     name.textContent = `${item.name}`;
+//     address.textContent = `${item.address}`;
+//     phone.textContent = `${item.phone}`;
+//     site.setAttribute('href', item.websiteURL);
+//     site.textContent = item.websiteURL;
+
+//     row.appendChild(name);
+//     row.appendChild(address);
+//     row.appendChild(phone);
+//     row.appendChild(site);
+
+//     document.querySelector('table').appendChild(row);    
+
+// }
+
+document.querySelector('#table-btn').addEventListener('click', displayTable);
+document.querySelector('#grid-btn').addEventListener('click', displayCards);

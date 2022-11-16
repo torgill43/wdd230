@@ -418,8 +418,7 @@ textarea {
 /* -------------- DIRECTORY PAGE ----------------*/
 
 #directory-main {
-    display: flex;
-    justify-content: space-around;
+    display: block;
 }
 
 .cards {
@@ -432,7 +431,7 @@ textarea {
 
 .cards section {
     border: 1px solid #2b7029;
-    background-color: #ebebcd;
+    background-color: rgb(203, 164, 109);
     padding: 30px;
     text-align: center;
     width: 250px;
@@ -441,4 +440,70 @@ textarea {
 
 .cards section img {
     width: 90%;
+    height: 125px;
+    border-radius: 5pt;
+    /* background-color: #2b7029; */
 }
+
+.cards section a {
+   color: rgb(0, 64, 255);
+}
+
+#dir-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#table-btn, #grid-btn {
+    display: block;
+    border: 1px solid rgb(203, 164, 109);
+    color:#2b7029;
+    display: block;
+    border-radius: 5pt;
+    margin: 5px 8px;
+}
+
+#table-btn:hover, #grid-btn:hover {
+    background-color: #2b7029;
+    color:#fefee2;
+}
+
+table {
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+tr {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;  
+}
+
+td {
+    text-align: left;
+    font-weight: 300;
+    padding: 5px;
+    width: 250px;
+    /* height: 35px; */
+    /* font-size: 2em; */
+}
+
+/* td {
+    border: 1px solid black;
+    border-collapse: collapse;
+} */
+
+tr:nth-child(odd) {
+    background-color: rgb(203, 164, 109);
+}
+
+tr:nth-child(12) {
+    border-bottom: 1px solid rgb(203, 164, 109);
+}
+
+/* tr:nth-child(even) {
+    background-color: rgb(242, 247, 246);
+} */
