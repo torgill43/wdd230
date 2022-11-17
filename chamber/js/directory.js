@@ -121,7 +121,7 @@ function toggleTable() {
     // document.querySelector('table').style.display = 'table-cell';
     document.querySelector('.cards').style.display = 'none';
     if (document.querySelector('table').style.display == 'none'){
-        document.querySelector('table').style.display = 'table-cell';
+        document.querySelector('table').style.display = 'block';
     }
 
     // document.querySelector('table').classList.toggle("show-table");
