@@ -109,8 +109,10 @@ async function displayTable() {
 function toggleCard() {
     document.querySelector('table').style.display = 'none';
     // document.querySelector('.cards').style.display = 'flex';
-
-    document.querySelector('.cards').classList.toggle("show-cards");
+    if (document.querySelector('.cards').style.display == 'none'){
+        document.querySelector('.cards').style.display = 'flex';
+    }
+    // document.querySelector('.cards').classList.toggle("show-cards");
 }
 
 document.querySelector('#grid-btn').addEventListener('click', toggleCard);
@@ -118,8 +120,11 @@ document.querySelector('#grid-btn').addEventListener('click', toggleCard);
 function toggleTable() {
     // document.querySelector('table').style.display = 'table-cell';
     document.querySelector('.cards').style.display = 'none';
+    if (document.querySelector('table').style.display == 'none'){
+        document.querySelector('table').style.display = 'table-cell';
+    }
 
-    document.querySelector('table').classList.toggle("show-table");
+    // document.querySelector('table').classList.toggle("show-table");
 }
 
 document.querySelector('#table-btn').addEventListener('click', toggleTable);
