@@ -422,6 +422,10 @@ textarea {
 }
 
 .cards {
+    display: none;
+}
+
+.show-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -429,7 +433,7 @@ textarea {
     text-align: center;
 }
 
-.cards section {
+.show-cards section {
     border: 1px solid #2b7029;
     background-color: rgb(203, 164, 109);
     padding: 30px;
@@ -469,7 +473,12 @@ textarea {
 }
 
 table {
+    display: none;
+}
+
+.show-table {
     margin: 10px auto;
+    display: table-cell;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

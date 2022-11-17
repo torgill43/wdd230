@@ -45,8 +45,8 @@ async function getData(requestURL) {
 };
 
 async function displayCards() {
-    document.querySelector('.cards').style.display = 'none';
-    document.querySelector('table').style.display = 'none';
+    // document.querySelector('.cards').style.display = 'none';
+    // document.querySelector('table').style.display = 'none';
 
     let business = await getData(requestURL);
     // console.log(business);
@@ -78,14 +78,12 @@ async function displayCards() {
 }
 
 async function displayTable() {
-    document.querySelector('.cards').style.display = 'none';
-    document.querySelector('table').style.display = 'none';
 
     let business = await getData(requestURL);
     console.log(business);
+    business.forEach(displayBusinessTable);
 
     function displayBusinessTable(item) {
-        business.forEach(displayBusinessTable);
 
         let row = document.createElement('tr');
         let name = document.createElement('td');
@@ -108,6 +106,26 @@ async function displayTable() {
     }
 }
 
+function toggleCard() {
+    document.querySelector('table').style.display = 'none';
+    // document.querySelector('.cards').style.display = 'flex';
+
+    document.querySelector('.cards').classList.toggle("show-cards");
+}
+
+document.querySelector('#grid-btn').addEventListener('click', toggleCard);
+
+function toggleTable() {
+    // document.querySelector('table').style.display = 'table-cell';
+    document.querySelector('.cards').style.display = 'none';
+
+    document.querySelector('table').classList.toggle("show-table");
+}
+
+document.querySelector('#table-btn').addEventListener('click', toggleTable);
+
 getData(requestURL);
-document.querySelector('#table-btn').addEventListener('click', displayTable);
-document.querySelector('#grid-btn').addEventListener('click', displayCards);
+displayCards();
+displayTable();
+// document.querySelector('#table-btn').addEventListener('click', displayTable);
+// document.querySelector('#grid-btn').addEventListener('click', displayCards);
