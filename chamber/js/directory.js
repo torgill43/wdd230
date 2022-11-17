@@ -2,7 +2,7 @@
 const date_now = new Date();
 console.log(date_now);
 
-const full_date = new Intl.DateTimeFormat ('en-US', {dateStyle: 'full'}).format(date_now);
+const full_date = new Intl.DateTimeFormat('en-US', { dateStyle: 'full' }).format(date_now);
 console.log(full_date);
 document.querySelector('.current-date').textContent = full_date;
 
@@ -36,10 +36,10 @@ async function getData(requestURL) {
     console.log(response);
     if (response.ok) {
         const jsObject = await response.json();
-        console.log(jsObject);
+        // console.log(jsObject);
         const businesses = jsObject['businesses'];
-        console.log(businesses[0].name);
-        businesses.forEach(displayCards);
+        // console.log(businesses[0].name);
+        // businesses.forEach(displayCards);
         return businesses;
     }
 };
@@ -49,7 +49,7 @@ async function displayCards() {
     document.querySelector('table').style.display = 'none';
 
     let business = await getData(requestURL);
-    console.log(business);
+    // console.log(business);
     business.forEach(displayBusinessesCards);
 
     function displayBusinessesCards(item) {
@@ -73,7 +73,7 @@ async function displayCards() {
         card.appendChild(phone);
         card.appendChild(site);
 
-        document.querySelector('.cards').appendChild(card); 
+        document.querySelector('.cards').appendChild(card);
     }
 }
 
@@ -83,75 +83,31 @@ async function displayTable() {
 
     let business = await getData(requestURL);
     console.log(business);
-    business.forEach(displayBusinessesTable);
 
-    let row = document.createElement('tr');
-    let name = document.createElement('td');
-    let address = document.createElement('td');
-    let phone = document.createElement('td');
-    let site = document.createElement('td');
+    function displayBusinessTable(item) {
+        business.forEach(displayBusinessTable);
 
-    name.textContent = `${item.name}`;
-    address.textContent = `${item.address}`;
-    phone.textContent = `${item.phone}`;
-    site.setAttribute('href', item.websiteURL);
-    site.textContent = item.websiteURL;
+        let row = document.createElement('tr');
+        let name = document.createElement('td');
+        let address = document.createElement('td');
+        let phone = document.createElement('td');
+        let site = document.createElement('td');
 
-    row.appendChild(name);
-    row.appendChild(address);
-    row.appendChild(phone);
-    row.appendChild(site);
+        name.textContent = `${item.name}`;
+        address.textContent = `${item.address}`;
+        phone.textContent = `${item.phone}`;
+        site.setAttribute('href', item.websiteURL);
+        site.textContent = item.websiteURL;
 
-    document.querySelector('table').appendChild(row);  
+        row.appendChild(name);
+        row.appendChild(address);
+        row.appendChild(phone);
+        row.appendChild(site);
+
+        document.querySelector('table').appendChild(row);
+    }
 }
 
-// function displayBusinessesCards(item) {
-//     document.querySelector('table').style.display = 'none';
-//     document.querySelector('.cards').style.display = 'none';
-//     let card = document.createElement('section');
-//     let logo = document.createElement('img');
-//     let address = document.createElement('p');
-//     let phone = document.createElement('p');
-//     let site = document.createElement('a');
-
-//     logo.setAttribute('src', `https://raw.githubusercontent.com/torgill43/wdd230/main/chamber/images/${item.logo}`);
-//     logo.setAttribute('alt', `${item.name} Logo`);
-//     address.textContent = `${item.address} `
-//     phone.textContent = `${item.phone}`;
-//     site.setAttribute('href', item.websiteURL);
-//     site.textContent = item.websiteURL;
-
-//     card.appendChild(logo);
-//     card.appendChild(address);
-//     card.appendChild(phone);
-//     card.appendChild(site);
-
-//     document.querySelector('.cards').appendChild(card);    
-// }
-
-// function displayBusinessesTable(item) {
-//     document.querySelector('.cards').style.display = 'none';
-//     document.querySelector('table').style.display = 'none';
-//     let row = document.createElement('tr');
-//     let name = document.createElement('td');
-//     let address = document.createElement('td');
-//     let phone = document.createElement('td');
-//     let site = document.createElement('td');
-
-//     name.textContent = `${item.name}`;
-//     address.textContent = `${item.address}`;
-//     phone.textContent = `${item.phone}`;
-//     site.setAttribute('href', item.websiteURL);
-//     site.textContent = item.websiteURL;
-
-//     row.appendChild(name);
-//     row.appendChild(address);
-//     row.appendChild(phone);
-//     row.appendChild(site);
-
-//     document.querySelector('table').appendChild(row);    
-
-// }
-
+getData(requestURL);
 document.querySelector('#table-btn').addEventListener('click', displayTable);
 document.querySelector('#grid-btn').addEventListener('click', displayCards);
