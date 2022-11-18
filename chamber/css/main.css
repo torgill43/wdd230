@@ -479,7 +479,6 @@ table {
 .show-table {
     margin: 10px auto;
     display: table-cell;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     /* flex-direction: column; */

@@ -66,7 +66,7 @@ async function displayCards() {
         address.textContent = `${item.address} `
         phone.textContent = `${item.phone}`;
         site.setAttribute('href', item.websiteURL);
-        site.textContent = item.websiteURL;
+        site.textContent = "Link to site";
 
         card.appendChild(logo);
         card.appendChild(address);
@@ -120,9 +120,12 @@ document.querySelector('#grid-btn').addEventListener('click', toggleCard);
 function toggleTable() {
     // document.querySelector('table').style.display = 'table-cell';
     document.querySelector('.cards').style.display = 'none';
+    
     if (document.querySelector('table').style.display == 'none'){
         document.querySelector('table').style.display = 'block';
     }
+
+    document.querySelector('table').style.display = 'block';
 
     // document.querySelector('table').classList.toggle("show-table");
 }
