@@ -61,7 +61,7 @@
                     <img id="hero-imgS" src="images/hero-508.jpg" alt="hero-img">
                 </picture>
                 <p id="hero-msg">Welcome to East Idaho!</p>
-                <button type="button" class="hero-btn">Join Now</button>
+                <button type="button" class="hero-btn" onclick="window.location.href='join.html'">Join Now</button>
             </section>
             <section class="event">
                 <h2>Events:</h2>
@@ -79,10 +79,12 @@
             <section class="weather">
                 <h2>Weather</h2>
                 <div class="temp">
-                    <img src="images/weather-c.png" alt="weather-icon">
-                    <p><span id="temp">17</span>&#8457;</p>
+                    <img id="weather-icon" src="" alt="icon">
+                    <p><span id="temp">14</span>&#8457;</p>
+                    <p><span id="desc">Conditions</span></p>
                 </div>
-                <p>Wind Speed: <span id="wind-speed">6</span> mph</p>
+                <hr id="weather-break">
+                <p>Wind Speed: <span id="wind-speed">7</span> mph</p>
                 <p>Wind Chill: <span id="wind-chill">N/A</span></p>
             </section>
             <section class="news">
@@ -123,7 +125,8 @@
             <div>
                 <p class="email">info@eastern_idaho.org</p>
                 <p class="number">+1(800)555-5555</p>
-                <a  class="map" href="https://goo.gl/maps/o7PZx8LgnXjKj78G7" target="_blank"><p>Location Map</p></a>
+                <a class="map" href="https://goo.gl/maps/o7PZx8LgnXjKj78G7" target="_blank"><p>Location Map</p></a>
+                <p>*Weather information courtesy of <a id="contributions" href="https://openweathermap.org/" target="_blank">openweathermap.org</a></p>
             </div>
             </div>
             <hr>

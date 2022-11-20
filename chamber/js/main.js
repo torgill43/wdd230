@@ -38,7 +38,7 @@ if (weekDay == 1 || weekDay == 2) {
 
 // Wind Chill
 
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5861897&appid=e6f954163934644be8ce65af59e78b53";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5596475&appid=e6f954163934644be8ce65af59e78b53";
 const getWeather = async () => {
     const response = await fetch(apiURL);
     const jsObject = await response.json();
@@ -46,31 +46,43 @@ const getWeather = async () => {
 
     // Temp
     let tempK = jsObject.main.temp
-    let tempF = ((tempK - 273.15) * 1.8000 + 32).toFixed(2);
+    let tempF = ((tempK - 273.15) * 1.8000 + 32).toFixed(0);
     document.querySelector('#temp').textContent = tempF;
 
     // Wind
-    let speed = jsObject.wind.speed
-
+    let speedMeters = jsObject.wind.speed;
+    let speed = (speedMeters * 2.237).toFixed(1);
+    
+    // Icon
     const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-    const desc = jsObject.weather[0].description;
-    document.querySelector('#icon-src').textContent = iconsrc;
-    document.querySelector('#weathericon').setAttribute('src', iconsrc);
-    document.querySelector('#weathericon').setAttribute('alt', desc);
-    document.querySelector('figcaption').textContent = desc;
+    let weatherIcon = jsObject.weather[0]
+    document.querySelector('#weather-icon').textContent = iconsrc;
+    document.querySelector('#weather-icon').setAttribute('src', iconsrc);
+    document.querySelector('#weather-icon').setAttribute('alt', "weather icon");
+    
+    // Description
+    let desc = jsObject.weather[0].description;
+    let descArr = desc.split(" ");
+    for (var i = 0; i < descArr.length; i++)
+        descArr[i] = descArr[i].charAt(0).toUpperCase() + descArr[i].slice(1);
+    let descCapital = descArr.join(" ");
+    document.querySelector('#desc').textContent = descCapital;
+    
+    if (tempF < 50 && speed > 4.8) {
+        let chill = Math.round((35.74 + (0.6215 * tempF))-(35.75 * Math.pow(speed,0.16)) + (0.4275*tempF*Math.pow(speed,0.16)));
+        
+        const windchill = document.querySelector('#wind-chill');
+        
+        windchill.innerHTML = chill + '&#8457;';
+    }
+    document.querySelector('#wind-speed').textContent = speed;
   };
 getWeather();
 
 // let temp = document.querySelector('#temp').textContent;
-let windspeed = document.querySelector('#wind-speed').textContent;
+// let windspeed = document.querySelector('#wind-speed').textContent;
 
-if (temp < 50 && windspeed > 4.8) {
-let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
 
-const windchill = document.querySelector('#wind-chill');
-
-windchill.innerHTML = chill + '&#8457;';
-}
 
 
 // -------------------- Discovery Page ---------------------

@@ -236,6 +236,10 @@ main h5 {
     font-size: xx-large;
 }
 
+#weather-break {
+    background-color:#2b7029;
+}
+
 .join {
     display: none;
     background-color: rgba(237, 207, 165, 0.482);
@@ -330,7 +334,7 @@ footer {
     font-family: 'Yeseva One';
 }
 
-.map {
+.map, #contributions {
     color:#fefee2;
 }
 
