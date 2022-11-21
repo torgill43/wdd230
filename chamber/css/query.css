@@ -116,7 +116,7 @@
         display: block;
         grid-row: 2/3;
         grid-column: 1/9;
-        height: 350px;
+        /* height: 350px; */
         /* display: grid; */
         /* grid-template-columns: 1fr auto; */
     }

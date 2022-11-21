@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Raleway:wght@300&family=Yeseva+One&display=swap');
 
-/* Color Scheme
+/* 
+Color Scheme--
 Primary: #7fc37e (light green)
           
 Secondary: #fefee2 (tan-ish)
@@ -8,6 +9,13 @@ Secondary: #fefee2 (tan-ish)
 Accent #1: rgb(165, 114, 42) (brown)
 
 Accent #2: #2b7029 (dark green)
+
+Fonts--
+Title: "Yeseva One"
+
+Main: "Abysinnica SIL" 
+
+Paragraph: Raleway
 */
 
 body {
@@ -19,6 +27,7 @@ body {
     margin: 0 auto;
     max-width: 400px;
     /* background-color: aqua; */
+    font-family: Raleway;
 }
 
 #announcement {
@@ -171,7 +180,21 @@ main {
     /* height: auto; */
     margin: 5px 0;  
     position: relative;
+    padding-bottom: 5px;
 }
+
+.weather h2 {
+    margin: 10px 0 5px 0;
+}
+
+.weather p {
+    margin: 10px auto;
+}
+
+.news p {
+    margin: 5px auto;
+}
+
 
 main h5 {
     font-family: 'Abyssinica SIL';
@@ -429,6 +452,18 @@ textarea {
     display: none;
 }
 
+.cards section a {
+    color: black;
+    font-family: "Abysinnica SIL";
+}
+
+.cards section a:hover {
+    background-color: white;
+    border-radius: 5pt;
+    padding: 5px;
+    border: 2px solid #2b7029;
+}
+
 .show-cards {
     display: flex;
     flex-wrap: wrap;
@@ -453,9 +488,9 @@ textarea {
     /* background-color: #2b7029; */
 }
 
-.cards section a {
+/* .cards section a {
    color: rgb(0, 64, 255);
-}
+} */
 
 #dir-btn {
     display: flex;
