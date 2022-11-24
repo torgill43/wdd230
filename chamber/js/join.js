@@ -24,3 +24,15 @@ function toggleMenu() {
 const x = document.querySelector('#hamburger-button');
 
 x.addEventListener('click', toggleMenu);
+
+// Hidden date
+const hiddenDate = 
+    date.getMonth() + ' / ' +
+    date.getDate() + ' / ' +
+    date.getFullYear() + ' / ' +
+    date.getHours() + ' / ' +
+    date.getMinutes() + ' / ' +
+    date.getSeconds()
+;
+
+document.querySelector('#hidden-date').textContent = hiddenDate;

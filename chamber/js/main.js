@@ -151,11 +151,3 @@ getWeather();
                                     
 // -------------------- Join Page ---------------------
 
-// const hiddenDate = 
-//     date.getMonth() + ' / ' +
-//     date.getDate() + ' / ' +
-//     date.getFullYear() + ' / ' +
-//     date.getHours() + ' / ' +
-//     date.getMinutes() + ' / ' +
-//     date.getSeconds()
-// ;

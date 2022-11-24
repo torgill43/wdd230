@@ -396,7 +396,7 @@ hr {
     margin-top: 5px
 }
 
-/* -------------- JOIN PAGE ----------------*/
+/* -------------- JOIN & THANK YOU PAGE ----------------*/
 
 form input:required {
     border-left: red solid 6px;
@@ -439,6 +439,17 @@ textarea {
     align-items: center;
     max-width: 350px;
     margin: 30px auto;
+}
+
+#thank-you {
+    text-align: center;
+    height: 400px;
+    font-family: "Yeseva One";
+}
+
+#thank-you a {
+    color: #7fc37e;
+    font-family: Raleway;
 }
 
 
