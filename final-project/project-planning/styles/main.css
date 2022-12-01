@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@400&display=swap');
+
+:root {
+/* Colors */
+    --primary: #208E88;
+    --accent1: #EF946C;
+    --font-color-color: #444545;
+    --background: #EAF6FF;
+
+/* Typography */
+    --title-font: Cinzel;
+    --title-weight: 600;
+    --main-font: Cinzel;
+    --main-weight: 400;
+    --paragraph-font: Montserrat;
+    --paragraph-weight: 400;
+}
+
+body {
+    background-color: var(--background);
+}
+
+#content {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    padding: 10px 10px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+hr {
+    background-color: var(--font-color);
+    width: 100%
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--font-color);
+    padding-right: 15px;
+    text-align: center;
+    font-family: var(--main-font);
+}
+
+nav a:hover {
+    color: var(--accent1);
+}
+
+.logo {
+    width: 150px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-family: var(--title-font);
+    font-weight: var(--title-weight);
+}
+
+h2 {
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+}
+
+footer {
+    text-align: center;
+    /* background-color: rgb(165, 114, 42); */
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+footer p {
+    font-family: "Raleway";
+}
+
+/* -------------- HOME PAGE (index.html) ----------------- */
+
+.main-p {
+    font-family: var(--paragraph-font);
+    max-width: 500px;
+}
+
+.logo-display {
+    width: 350px;
+    border-radius: 50%;
+}
+
+
+/* ----------------- TARGET AUDIENCE PAGE --------------- */
+
+#service {
+    width: 200px;
+}
+
+#tourist {
+    width: 300px;
+}
+
+.audience-p {
+    font-family: var(--paragraph-font);
+    /* font-weight: var(--paragraph-weight); */
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+#persona2 {
+    margin-top: 25px;
+}
+
+.scenarios {
+    margin-bottom: 35px;
+}
+
+ol {
+    font-family: var(--paragraph-font);
+    text-align: left;
+    max-width: 500px;
+}
+
+/* ----------------- TYPOGRAPHY PAGE --------------- */
+
+#title-font, #main-font, #p-font {
+    /* grid-column: 1/2; */
+    /* padding: 0 100px; */
+    width: 400px;
+    margin: 0 auto;
+}
+
+#title-font {
+    font-family: var(--title-font);
+    font-weight: var(--title-weight);
+    border: 1.5px solid black;
+    /* background-color: #fefee2; */
+    margin-bottom: 15px;
+}
+
+#title-font h2 {
+    font-family: var(--title-font);
+    font-weight: var(--title-weight);
+}
+
+#main-font {
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+    border: 1.5px solid black;
+    margin-bottom: 15px;
+}
+
+#main-font h2 {
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+}
+
+#p-font{
+    font-family: var(--paragraph-font);
+    font-weight: var(--paragraph-weight);
+    border: 1.5px solid black;
+    margin-bottom: 15px;
+}
+
+#p-font h2 {
+    font-family: var(--paragraph-font);
+}
+
+
+/* ----------------- COLOR SCHEME PAGE --------------- */
+
+#primary {
+    background-color: var(--primary);
+    border: 1.5px solid black;
+    margin: 15px;
+}
+
+
+#accent1 {
+    background-color: var(--accent1);
+    border: 1.5px solid black;
+    margin: 15px;
+}
+
+#background {
+    background-color: var(--background);
+    border: 1.5px solid black;
+    margin: 15px;
+}
+
+#font {
+    color: var(--font-color);
+    border: 1.5px solid black;
+    margin: 15px;
+}
+
+#primary, #accent1, #font, #background {
+    width: 400px;
+    margin: 10px auto;
+}

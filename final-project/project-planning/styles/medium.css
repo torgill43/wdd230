@@ -1,0 +1,97 @@
+/* MEDIUM SCREEN MEDIA QUERY */
+
+@media only screen and (min-width: 550px) {
+    #content {
+        /* grid-template-columns: 1fr 1fr; */
+        max-width: 800px;
+    }
+
+    header {
+        grid-column: 1/3;
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    main {
+        grid-column: 1/3;
+    }
+
+    /* .personas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    } */
+
+    #persona-title {
+        grid-column: 1/3;
+    }
+
+    #persona1 {
+        grid-column: 1/2
+    }
+
+    #persona2 {
+        grid-column: 2/3;
+    }
+
+    footer {
+        grid-column: 1/3;
+    }
+}
+
+/* LARGE SCREEN MEDIA QUERY */
+
+@media only screen and (min-width: 1000px) {
+    #content {
+        max-width: 1200px;
+    }
+
+    main {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr; */
+        align-items: center;
+        justify-items: center;
+    }
+
+    nav {
+        align-items: center;
+    }
+
+    /* MAIN PAGE */
+
+    #part1, #part2 {
+        grid-column: 1/3;
+    }
+
+    /* TARGET AUDIENCE PAGE */
+
+    .purpose {
+        max-width: 800px;
+        grid-column: 1/3;
+    }
+
+    #persona-title {
+        grid-column: 1/3;
+    }
+
+    .personas {
+        grid-column: 1/3;
+    }
+    
+    .scenarios {
+        grid-column: 1/3;
+        /* grid-row: 2/3; */
+        
+    }
+
+    /* TYPOGRAPHY PAGE */ 
+
+    
+    /* COLOR SCHEME PAGE */
+    
+    
+}
