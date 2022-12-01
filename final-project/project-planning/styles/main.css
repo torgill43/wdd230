@@ -74,6 +74,10 @@ h2 {
     font-weight: var(--main-weight);
 }
 
+#map {
+    width: 450px;
+}
+
 footer {
     text-align: center;
     /* background-color: rgb(165, 114, 42); */
