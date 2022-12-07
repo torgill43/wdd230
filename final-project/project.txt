@@ -1,0 +1,54 @@
+Where I'm at:
+
+Header:
+x Hamburger button
+
+Footer:
+x link to Google showing company headquarters
+x social media links (2)
+x link to Contact page
+
+Home Page:
+- images of hotel rooms
+- call to action to make a reservation
+- summary information about hotel of choosing
+- weather
+    -- temp, condition description, humidity
+
+Hotels Page:
+- At least 4 Hotels
+    -- Address, phone, email, services, history, 
+- 'like' saved in local storage
+- 
+
+Hotels Page Sub: Future Hotels Page: 
+- One or two locations coming
+
+? Hotels Page SUb: Parks Page:
+- if there is time, display cards of the parks that the hotel is located near
+
+Services Page (Amenities):
+
+
+Serve Page:
+
+Contact Page:
+- Form
+- >> Thank you/message received page
+
+------------------------
+Specialized Services:
+- Themed rooms to match park
+- A wedding reception hall with a simple catering menu and kitchen access for food preparation and serving
+- Foreign currency exchange
+- Concierge assitance to find other things to do while in town
+
+Free Amenities:
+- Breakfast
+- Exercise room 
+- Rotating fitness classes
+-- Weekly schedule
+- High speed internet access and smart TVs
+- (underground?) Parking (at some locations?)
+- Shuttle to park entrance
+- 
