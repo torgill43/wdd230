@@ -93,20 +93,6 @@ hr {
     border-radius: 50%;
 }
 
-/* h1 {
-    font-family: var(--title-font);
-    font-weight: var(--title-weight);
-}
-
-h2 {
-    font-family: var(--main-font);
-    font-weight: var(--main-weight);
-}
-
-#map {
-    width: 450px;
-} */
-
 footer {
     text-align: center;
     padding: 10px 0;
@@ -133,8 +119,7 @@ footer a:hover {
 }
 
 
-
-/* --------- HOME PAGE (index.html) ------------ */
+/* ------------- HOME PAGE ------------- */
 
 .main-p {
     font-family: var(--paragraph-font);
@@ -147,111 +132,67 @@ footer a:hover {
 }
 
 
-/* ----------------- TARGET AUDIENCE PAGE --------------- */
+/* ------------- RESERVATION PAGE ------------- */
 
-#service {
-    width: 200px;
+form input:required {
+    border-left: red solid 6px;
 }
 
-#tourist {
+form input:required:valid{
+    border-left: green solid 6px;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: left;
+    font-family: var(--paragraph-font);
+    font-weight: var(--paragraph-weight);
+}
+
+label, input, textarea {
+    display: block;
+    margin-left: 30px;
+}
+
+textarea {
+    height: 150px;
     width: 300px;
 }
 
-.audience-p {
-    font-family: var(--paragraph-font);
-    /* font-weight: var(--paragraph-weight); */
-    max-width: 500px;
-    margin: 10px auto;
+#reserve-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    margin: 30px auto;
 }
 
-#persona2 {
-    margin-top: 25px;
-}
-
-.scenarios {
-    margin-bottom: 35px;
-}
-
-ol {
-    font-family: var(--paragraph-font);
-    text-align: left;
-    max-width: 500px;
-}
-
-/* ----------------- TYPOGRAPHY PAGE --------------- */
-
-#title-font, #main-font, #p-font {
-    /* grid-column: 1/2; */
-    /* padding: 0 100px; */
-    width: 400px;
-    margin: 0 auto;
-}
-
-#title-font {
-    font-family: var(--title-font);
-    font-weight: var(--title-weight);
-    border: 1.5px solid black;
-    /* background-color: #fefee2; */
-    margin-bottom: 15px;
-}
-
-#title-font h2 {
-    font-family: var(--title-font);
-    font-weight: var(--title-weight);
-}
-
-#main-font {
+#form-submit {
     font-family: var(--main-font);
-    font-weight: var(--main-weight);
-    border: 1.5px solid black;
-    margin-bottom: 15px;
+    margin-top: 5px;
 }
 
-#main-font h2 {
+/* ------------- THANK YOU PAGE ------------- */
+
+#thank-you {
+    height: 400px;
+}
+
+#thank-you h1 {
     font-family: var(--main-font);
     font-weight: var(--main-weight);
 }
 
-#p-font{
+#thank-you a {
     font-family: var(--paragraph-font);
-    font-weight: var(--paragraph-weight);
-    border: 1.5px solid black;
-    margin-bottom: 15px;
+    text-decoration: none;
+    color: var(--font-color)
 }
 
-#p-font h2 {
-    font-family: var(--paragraph-font);
-}
-
-
-/* ----------------- COLOR SCHEME PAGE --------------- */
-
-#primary {
-    background-color: var(--primary);
-    border: 1.5px solid black;
-    margin: 15px;
-}
-
-
-#accent1 {
-    background-color: var(--accent1);
-    border: 1.5px solid black;
-    margin: 15px;
-}
-
-#background {
-    background-color: var(--background);
-    border: 1.5px solid black;
-    margin: 15px;
-}
-
-#font {
-    color: var(--font-color);
-    border: 1.5px solid black;
-    margin: 15px;
-}
-
-#primary, #accent1, #font, #background {
-    width: 400px;
-    margin: 10px auto;
+#thank-you a:hover {
+    color: var(--accent1)
 }

@@ -33,8 +33,11 @@ Services Page (Amenities):
 Serve Page:
 
 Contact Page:
-- Form
-- >> Thank you/message received page
+x Form
+- drop down to select which hotel (use selected element in form)
+- JS to validate reservation dates are in proper order
+- Reformat large view to fill space
+x >> Thank you/message received page
 
 ------------------------
 Specialized Services:

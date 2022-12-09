@@ -7,7 +7,7 @@
     <title>Parks Inn & Suites</title>
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/query.css" rel="stylesheet">
-    <link href="..css/normalize.css">
+    <link href="..css/normalize.css" rel="stylesheet">
     <script defer src="scripts/main.js"></script>
     <link rel="icon" href="favicon.ico">
 </head>
@@ -27,9 +27,35 @@
         </nav>
     </header>
     <hr>
-    <main>
+        <main id="reserve-content">
+            <form method="get" action="thankyou.html">
+                <label for="fname">First Name*:</label>
+                <input id="fname" type="text" name="firstname" required>
 
-    </main>
+                <label for="lname">Last Name*:</label>
+                <input id="lname" type="text" name="lastname" required>
+                <!-- [] indicate what we want to allow in the field -->
+
+                <label for="date">Select your reservation dates:</label>
+                <label for="date">Start Date:</label>
+                <input required id="date" name="date" type="date">
+                <label for="date">End Date:</label>
+                <input required id="date" name="date" type="date">
+
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="name@email.com">
+
+                <label for="phone">Cell Number:</label>
+                <input id="phone" type="tel" name="phone" required placeholder="(xxx) xxx-xxxx">
+
+                <label for="message">Other:</label>
+                <textarea id="message" placeholder="Please provide us with any additional information we should be aware of."></textarea>
+
+                <input id="hidden-date" type="hidden" name="todaydate">
+
+                <input id="form-submit" type="submit" action="thankyou.html" value="Reserve Now">
+            </form>
+        </main>
     <hr>
         <footer>
             <p class="copyright">&copy;<span class="year"></span> | Tim Orgill | Idaho </p>
@@ -38,7 +64,7 @@
                 <a  href="#"><img id="insta-icon" src="images/instagram.png" alt="facebook-link"></a>
             </div>
             <a class="map" href="https://goo.gl/maps/o7PZx8LgnXjKj78G7" target="_blank"><p>Location Map</p></a>
-            <a class="ft-contact" href="contact.html"><p>Contact Us</p></a>
+            <a class="ft-reserve" href="reserve.html"><p>Reserve Now</p></a>
 
             <p class="last-save">Last Modified: <span class="updated"></span></p>
         </footer>
