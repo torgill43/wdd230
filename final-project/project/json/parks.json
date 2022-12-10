@@ -3,28 +3,28 @@
       {
         "name": "Mammoth Cave National Park",
         "city": "Mammoth Cave",
-        "state-id": "KY",
+        "state": "KY",
         "websiteURL": "https://www.nps.gov/maca/index.htm",
         "description": "Hundreds of miles of caves (both explored and unknown) lie beneath the earth's surface here in Mammoth Cave, KY. Grab your flashlight and see what lies beneath your feet."
       },
       {
         "name": "Grand Teton National Park",
         "city": "Moose",
-        "state-id": "WY",
+        "state": "WY",
         "websiteURL": "https://www.nps.gov/grte/index.htm",
         "description": "Home to some of the most magnificent wildlife and lanscape, make sure you have plenty of space on your phone to take more pictures than you'll ever need."
       },
       {
         "name": "Hawai'i Volcanoes National Park",
         "city": "Hilo",
-        "state-id": "HI",
+        "state": "HI",
         "websiteURL": "https://www.nps.gov/maca/index.htm",
         "description": "Home to two of the world's most active volcanoes, you're sure to have the experience of a lifetime. You're sure to see unique biological and geological landscapes during your visit."
       },
       {
         "name": "Dry Tortugas National Park",
         "city": "Key West",
-        "state-id": "FL",
+        "state": "FL",
         "websiteURL": "https://www.nps.gov/drto/index.htm",
         "description": "This hotel is located in Key West, FL, only 70 miles east of this amazing national park. This park is mostly water, so the best way to explore is through swimming. There are also options for camping, boating, diving, and land and seaplane tours."
       }
