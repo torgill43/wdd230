@@ -24,8 +24,12 @@ Hotels Page:
 Hotels Page Sub: Future Hotels Page: 
 - One or two locations coming
 
-? Hotels Page SUb: Parks Page:
-- if there is time, display cards of the parks that the hotel is located near
+Parks Page:
+x add 4 parks that hotels are located near
+- style
+-- small view: 1 card (330-400px)
+-- tablet view: 1 card (500px)
+-- large view: 2 cards (400-450px)
 
 Services Page (Amenities):
 
@@ -43,7 +47,7 @@ x >> Thank you/message received page
 Specialized Services:
 - Themed rooms to match park
 - A wedding reception hall with a simple catering menu and kitchen access for food preparation and serving
-- Foreign currency exchange
+- Foreign currency exchange (with notice)
 - Concierge assitance to find other things to do while in town
 
 Free Amenities:
