@@ -1,7 +1,7 @@
 {
     "hotels": [
       {
-        "htmlLink": "1",
+        "htmlLink": "cave",
         "name": "Underground Cave",
         "phone": "270-555-9999",
         "address": "41 Gossom Ave",
@@ -12,9 +12,9 @@
         "history": "This cozy little town is the famous entrance to the Mammoth Cave National Park. Take some time while you're here to get to know your neighbors. You won't regret it."
       },
       {
-        "htmlLink": "2",
+        "htmlLink": "cabin",
         "name": "Mountain Cabin",
-        "phone": "307-555-999",
+        "phone": "307-555-9999",
         "address": "700 E Trap Club Road",
         "city": "Jackson",
         "state": "Wy",
@@ -23,9 +23,9 @@
         "history": "We placed our hotel here for your convenience. The views around are absolutely stunning and you may not want to leave once you get here. With a shuttle to the park and the airport (only minutes around) included in your stay, no need to worry how to get around. You are also located within minutes of fun, local entertainment as well as gorgeous ski resorts and more."
       },
       {
-        "htmlLink": "3",
+        "htmlLink": "hawaii",
         "name": "Hawaiian Paradise",
-        "phone": "808-555-999",
+        "phone": "808-555-9999",
         "address": "Mauna Loa Dr",
         "city": "Mountain View",
         "state": "HI",
@@ -34,7 +34,7 @@
         "history": "We could hardly hide our excitement as we took our machetes to the property to begin clearing ground for this marvelous hotel with an even more beautiful backdrop. In addition to the National Park and all its offerings, you are not far from the beautiful city of Hilo, with plenty of things to do and places to eat."
       },
       {
-        "htmlLink": "4",
+        "htmlLink": "atlantis",
         "name": "Underwater Deep Dive",
         "phone": "786-555-9999",
         "address": "Mustin St",
