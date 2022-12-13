@@ -21,6 +21,7 @@ async function displayParkInfo(item) {
     name.textContent = `${item.name}`
     location.textContent = `${item.city}, ${item.state}`
     a.setAttribute('href', item.websiteURL)
+    a.setAttribute('target', "_blank")
     a.textContent = "Link to Park Site"
     description.textContent = `${item.description}`
 

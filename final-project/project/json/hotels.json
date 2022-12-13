@@ -1,0 +1,44 @@
+{
+    "hotels": [
+      {
+        "name": "cave",
+        "phone": "270-555-9999",
+        "address": "41 Gossom Ave",
+        "city": "Park City",
+        "state": "KY",
+        "zip": "42160",
+        "shuttle": "15 minute shuttle to park.",
+        "history": "This cozy little town is the famous entrance to the Mammoth Cave National Park. Take some time while you're here to get to know your neighbors. You won't regret it."
+      },
+      {
+        "name": "cabin",
+        "phone": "307-555-999",
+        "address": "700 E Trap Club Road",
+        "city": "Jackson",
+        "state": "Wy",
+        "zip": "83001",
+        "shuttle": "15 minute shuttle to park.",
+        "history": "We placed our hotel here for your convenience. The views around are absolutely stunning and you may not want to leave once you get here. With a shuttle to the park and the airport (only minutes around) included in your stay, no need to worry how to get around. You are also located within minutes of fun, local entertainment as well as gorgeous ski resorts and more."
+      },
+      {
+        "name": "hawaii",
+        "phone": "808-555-999",
+        "address": "Mauna Loa Dr",
+        "city": "Mountain View",
+        "state": "HI",
+        "zip": "96771",
+        "shuttle": "15 minute shuttle to park.",
+        "history": "We could hardly hide our excitement as we took our machetes to the property to begin clearing ground for this marvelous hotel with an even more beautiful backdrop. In addition to the National Park and all its offerings, you are not far from the beautiful city of Hilo, with plenty of things to do and places to eat."
+      },
+      {
+        "name": "atlantis",
+        "phone": "786-555-9999",
+        "address": "Mustin St",
+        "city": "Key West",
+        "state": "FL",
+        "zip": "33040",
+        "shuttle": "N/A - see National Park website for instructions",
+        "history": "We've located in the stunning keys of Florida. We can't believe the view outside our windows each day and we hope you leave inspired by the beauty surrounding you. Since Dry Tortugas is 70 miles off the coast of Key West, it only accessible by boat or seaplane, we can't get you there, but we can get you where you need to go. "
+      }      
+    ]
+  }

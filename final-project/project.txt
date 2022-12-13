@@ -1,4 +1,8 @@
 Where I'm at:
+- Red heart doesn't show up on each pic in carousel (maybe just have one heart that always shows up?)
+
+Misc:
+- Fix last updated date to show only MM/DD/YYYY
 
 Header:
 x Hamburger button
@@ -17,9 +21,9 @@ Home Page:
 
 Hotels Page:
 - At least 4 Hotels
-    -- Address, phone, email, services, history, 
-- 'like' saved in local storage
-- 
+    -- Address, phone, special amenities?, history, weather 
+x 'like' saved in local storage
+-- make sure heart color stays the right color after closing and reopening tab
 
 Hotels Page Sub: Future Hotels Page: 
 - One or two locations coming
