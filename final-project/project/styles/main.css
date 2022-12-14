@@ -443,6 +443,7 @@ footer a:hover {
 #amenities-content ul li {
     font-family: var(--paragraph-font);
     text-align: left;   
+    list-style-type: circle;
 }
 
 
