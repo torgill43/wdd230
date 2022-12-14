@@ -9,6 +9,7 @@
     <link href="styles/query.css" rel="stylesheet">
     <link href="..css/normalize.css">
     <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/home.js"></script>
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
@@ -22,13 +23,80 @@
             <a href="index.html">Home</a>
             <a href="hotels.html">Hotels</a>
             <a href="parks.html">Parks</a>
-            <a href="service.html">Service</a>
+            <a href="amenities.html">Amenities</a>
             <a href="reserve.html">Reservations</a>
         </nav>
     </header>
     <hr>
     <main id="main-content">
+        <h1 class="main1">We are Parks Inn & Suites. Our mission is to provide quality hospitality in close proximity to National Parks around the country.</h1>
+        <h1 class="main1">Each hotel is themed according to National Park by which it is situated. Plus, your stay includes a free shuttle to the park entrance! </h1>
+        <h1 class="main1">See our <a href="hotels.html">Hotels</a> page for more information about our hotel locations and our <a href="amenities.html">Amenities</a> page to see what each hotel has to offer.</h1>
+        <div class="home-slideshow">
+            <!-- Full-width images with number and caption text -->
+            <div class="homeSlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/cave-01-og.png">
+                <div class="text">Underground Cave</div>
+            </div>
+        
+            <div class="homeSlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/cabin-01-og.jpg">
+                <div class="text">Mountain Cabin</div>
+                <!-- <div class="like cave-like" onclick="setCaveStatus()">&hearts;</div> -->
+            </div>
+        
+            <div class="homeSlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/hawaii-01-og.jpg">
+                <div class="text">Hawaiian Paradise</div>
+                <!-- <div class="like cave-like" onclick="setCaveStatus()">&hearts;</div> -->
+            </div>
 
+            <div class="homeSlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/atlantis-01-og.png">
+                <div class="text">Underwater Deep Dive</div>
+                <!-- <div class="like cave-like" onclick="setCaveStatus()">&hearts;</div> -->
+            </div>
+    
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- The dots/circles -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <button id="reserve-btn" type="button" onclick="window.location.href='reserve.html'">Reserve Now</button>
+
+        <div id="summary-content">
+            <h1>Continue scrolling to see where each of our current hotels are located.</h1>
+            <section>
+                <h2>Underground Cave</h2>
+                <h4>Located Near: Mammoth Cave National Park</h4>
+                <img src="images/cave-03-og.png" alt="cave-picture">
+            </section>
+            <section>
+                <h2>Mountain Cabin</h2>
+                <h4>Located Near: Grand Teton National Park</h4>
+                <img src="images/cabin-03-og.jpg" alt="cabin-picture">
+            </section>
+            <section>
+                <h2>Hawaiian Paradise</h2>
+                <h4>Located Near: Hawai'i Volcanoes National Park</h4>
+                <img src="images/hawaii-01-og.jpg" alt="hawaii-picture">
+            </section>
+            <section>
+                <h2>Underwater Deep Dive</h2>
+                <h4>Located Near: Dry Tortugas National Park</h4>
+                <img src="images/atlantis-03-og.png" alt="atlantis-pic">
+            </section>
+        </div>
     </main>
     <hr>
         <footer>
@@ -37,7 +105,7 @@
                 <a  href="#"><img id="fb-icon" src="images/facebook.png" alt="facebook-link"></a>
                 <a  href="#"><img id="insta-icon" src="images/instagram.png" alt="facebook-link"></a>
             </div>
-            <a class="map" href="https://goo.gl/maps/o7PZx8LgnXjKj78G7" target="_blank"><p>Location Map</p></a>
+            <a class="map" href="https://goo.gl/maps/o7PZx8LgnXjKj78G7" target="_blank"><p>HQ Map</p></a>
             <a class="ft-reserve" href="reserve.html"><p>Reserve Now</p></a>
 
             <p class="last-save">Last Modified: <span class="updated"></span></p>

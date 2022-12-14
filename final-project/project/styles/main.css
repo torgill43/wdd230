@@ -135,7 +135,109 @@ footer a:hover {
     border-radius: 50%;
 }
 
+#main-content h1 {
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+    font-size: larger;
+    text-align: left;
+}
+
+#main-content h2 {
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+}
+
+#main-content h1 a {
+    text-decoration: none;
+    color: var(--accent1);
+}
+
+#main-content h1 a:hover {
+    color: var(--primary);
+}
+
+.home-slideshow {
+    height: 300px;
+    display: flex;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    align-items: center;
+    border: 1px solid var(--primary);
+    border-radius: 4pt;
+    padding: 5px;
+    margin: 10px;
+}
+
+#reserve-btn {
+    background-color: var(--primary);
+    width: 125px;
+    font-size: medium;
+    color: var(--font-color);
+    border-radius: 5pt;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+#reserve-btn:hover {
+    background-color: var(--accent1);
+}
+
+#summary-content h1 {
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 10px;
+    margin-top: 35px;
+    font-size: x-large;
+    font-family: var(--title-font);
+    font-weight: var(--main-weight);
+}
+
+#summary-content h2 {
+    font-size: larger;
+    font-family: var(--title-font);
+    font-weight: var(--title-weight);
+}
+
+#summary-content h4 {
+    font-size: small;
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+}
+
+#summary-content section {
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 10px;
+}
+
+#summary-content section:nth-child(5) {
+    border-bottom: none;
+}
+
+#summary-content section img {
+    width: 75%;
+}
+
 /* ------------- HOTELS PAGE ------------- */
+/* ---- (and some home page slideshow content) ---- */
+
+#hotels-content h2 {
+    font-family: var(--title-font);
+    font-weight: var(--title-weight);
+    margin-top: 0;
+}
+
+#hotels-content h4{
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+    margin: 10px 0;
+    
+}
+
+#hotels-content p{
+    font-family: var(--paragraph-font);
+    font-weight: var(--paragraph-weight);
+    
+}
 
 #cave-content, #cabin-content, #hawaii-content, #atlantis-content {
     border: 1px solid var(--primary);
@@ -144,21 +246,21 @@ footer a:hover {
     margin: 10px;
 }
 
-#hotels-content img {
+#hotels-content img, #main-content img {
     width: 100%;
 }
 
 * {box-sizing:border-box}
 
 /* Slideshow container */
-.cave-slideshow, .cabin-slideshow, .hawaii-slideshow, .atlantis-slideshow {
+.homeSlides, .cave-slideshow, .cabin-slideshow, .hawaii-slideshow, .atlantis-slideshow {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
 /* Hide the images by default */
-.caveSlides, .cabinSlides, .hawaiiSlides, .atlantisSlides{
+.homeSlides, .caveSlides, .cabinSlides, .hawaiiSlides, .atlantisSlides{
   display: none;
 }
 
@@ -203,6 +305,7 @@ footer a:hover {
   bottom: 8px;
   width: 100%;
   text-align: right;
+  font-family: var(--paragraph-font);
 }
 
 /* Number text (1/3 etc) */
@@ -213,6 +316,8 @@ footer a:hover {
   position: absolute;
   top: 0;
   right: 0;
+  font-family: var(--paragraph-font);
+
 }
 
 .like {
@@ -261,6 +366,87 @@ footer a:hover {
   to {opacity: 1}
 }
 
+/* ------------- PARKS PAGE ------------- */
+/* #summary-content section {
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 10px;
+}
+
+#summary-content section:nth-child(5) {
+    border-bottom: none;
+} */
+
+#firsth2 {
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+    margin-top: 25px;
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 35px;
+    font-size: larger;
+}
+
+#parks-info h2 {
+    font-family: var(--title-font);
+    font-weight: var(--title-weight);
+    margin-top: 25px;
+}
+
+#parks-content h3 {
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+}
+
+#parks-content a {
+    text-decoration: none;
+    color: var(--accent1);
+    font-family: var(--paragraph-font);
+}
+
+#parks-content a:hover {
+    color: var(--primary);
+}
+
+#parks-content p {
+    font-family: var(--paragraph-font);
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 10px;
+}
+
+/* #firsth2 {
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+    font-size: larger;
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 35px;
+
+} */
+
+/* ------------- AMENITIES PAGE ------------- */
+#amenities-content h2 {
+    font-family: var(--main-font);
+    font-weight: var(--title-weight);
+    margin-top: 25px;
+    /* border-bottom: 1px solid var(--primary); */
+    /* padding-bottom: 35px; */
+    font-size: larger;
+}
+
+#section2 {
+    border-top: 1px solid var(--primary);
+    padding-top: 10px;
+}
+
+#amenities-content ul {
+    margin-left: 40px;
+}
+
+#amenities-content ul li {
+    font-family: var(--paragraph-font);
+    text-align: left;   
+}
+
+
+
 
 
 /* ------------- RESERVATION PAGE ------------- */
@@ -292,6 +478,14 @@ label, input, textarea {
 textarea {
     height: 150px;
     width: 300px;
+}
+
+select {
+    margin-bottom: 15px;
+}
+
+option {
+    font-family: var(--paragraph-font);
 }
 
 #reserve-content {

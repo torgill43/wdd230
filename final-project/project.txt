@@ -3,6 +3,7 @@ Where I'm at:
 
 Misc:
 - Fix last updated date to show only MM/DD/YYYY
+- Add alts to all images
 
 Header:
 x Hamburger button
@@ -13,15 +14,15 @@ x social media links (2)
 x link to Contact page
 
 Home Page:
-- images of hotel rooms
-- call to action to make a reservation
-- summary information about hotel of choosing
-- weather
-    -- temp, condition description, humidity
+x images of hotel rooms (carousel)
+x call to action to make a reservation
+x summary information about each hotel
 
 Hotels Page:
-- At least 4 Hotels
-    -- Address, phone, special amenities?, history, weather 
+x At least 4 Hotels
+    -x Address, phone, special amenities?, history, weather(? if I have time) 
+    -- weather
+        -- temp, condition, description, humidity
 x 'like' saved in local storage
 -- make sure heart color stays the right color after closing and reopening tab
 
@@ -35,10 +36,10 @@ x add 4 parks that hotels are located near
 -- tablet view: 1 card (500px)
 -- large view: 2 cards (400-450px)
 
-Services Page (Amenities):
+Amenities Page:
 
 
-Serve Page:
+Serve Page: (only if there is time)
 
 Contact Page:
 x Form
@@ -62,4 +63,3 @@ Free Amenities:
 - High speed internet access and smart TVs
 - (underground?) Parking (at some locations?)
 - Shuttle to park entrance
-- 

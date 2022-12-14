@@ -33,7 +33,6 @@ let caveLikeStatus;
 
 function setCaveStatus() {
     let heart = document.querySelector('.cave-like')
-    let slides = document.getElementsByClassName("caveSlides");
     if (heart.style.color != 'red') {
         heart.style.color = 'red'
         caveLikeStatus = true;
@@ -238,3 +237,56 @@ function setAtlantisStatus() {
 }
 
 // HOTEL INFORMATION ----------------------------------->
+const requestURL = "https://raw.githubusercontent.com/torgill43/wdd230/main/final-project/project/json/hotels.json";
+
+async function getHotelData(requestURL) {
+  const response = await fetch(requestURL);
+  console.log(response);
+  if (response.ok) {
+      const jsObject = await response.json();
+      const hotels = jsObject['hotels'];
+      console.log(hotels);
+      hotels.forEach(displayHotelInfo);
+  }
+}
+
+async function displayHotelInfo(item) {
+  let container = document.createElement('div');
+  let name = document.createElement('h2');
+  let phone = document.createElement('h4');
+  let address1 = document.createElement('h4');
+  let address2 = document.createElement('h4');
+  let shuttle = document.createElement('h4');
+  let history = document.createElement('p');
+
+  name.textContent = item.name;
+  phone.textContent = item.phone;
+  address1.textContent = item.address
+  address2.textContent = `${item.city}, ${item.state} ${item.zip}`;
+  shuttle.textContent = `Shuttle: ${item.shuttle}`;
+  history.textContent = item.history;
+
+  container.appendChild(name);
+  container.appendChild(phone);
+  container.appendChild(address1);
+  container.appendChild(address2);
+  container.appendChild(shuttle);
+  container.appendChild(history);
+
+  switch (item.htmlLink) {
+    case "cave":
+      document.querySelector('.cave-info').appendChild(container);
+      break
+    case "cabin":
+      document.querySelector('.cabin-info').appendChild(container); 
+      break
+    case "hawaii":
+      document.querySelector('.hawaii-info').appendChild(container);
+      break
+    case "atlantis":
+      document.querySelector('.atlantis-info').appendChild(container);
+      break
+  }
+  }
+
+getHotelData(requestURL);
